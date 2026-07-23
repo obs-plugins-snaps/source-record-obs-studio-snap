@@ -43,6 +43,7 @@ parts:
     cmake-parameters:
       - -DBUILD_OUT_OF_TREE=On
       - -DCMAKE_INSTALL_PREFIX=/usr
+      - -DCMAKE_C_FLAGS=-Wno-deprecated-declarations
     build-packages:
       - libsimde-dev
     build-snaps:
