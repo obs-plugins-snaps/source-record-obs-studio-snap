@@ -7,11 +7,11 @@ description: |
   Source Record lets you record any source in OBS Studio. This is a filter that
   provides an individual record button for any source, allowing you to record
   sources independently from the main output.
-contact: https://github.com/exeldro/obs-source-record/issues
+contact: https://github.com/astrojuanlu/source-record-obs-studio-snap
 license: GPL-2.0
-website: https://github.com/exeldro/obs-source-record
-source-code: https://github.com/exeldro/obs-source-record
-issues: https://github.com/exeldro/obs-source-record/issues
+website: https://github.com/astrojuanlu/source-record-obs-studio-snap
+source-code: https://github.com/astrojuanlu/source-record-obs-studio-snap
+issues: https://github.com/astrojuanlu/source-record-obs-studio-snap
 
 grade: stable
 confinement: strict
