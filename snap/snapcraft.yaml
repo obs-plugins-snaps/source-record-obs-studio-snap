@@ -47,7 +47,7 @@ parts:
     build-packages:
       - libsimde-dev
     build-snaps:
-      - obs-studio/latest/candidate
+      - obs-studio/latest/stable
     organize:
       usr/lib/obs-plugins/source-record.so: ${CRAFT_PROJECT_NAME}/plugins/source-record.so
       usr/share/obs/obs-plugins/source-record: ${CRAFT_PROJECT_NAME}/data
