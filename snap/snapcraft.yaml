@@ -43,14 +43,19 @@ parts:
     cmake-parameters:
       - -DBUILD_OUT_OF_TREE=On
       - -DCMAKE_INSTALL_PREFIX=/usr
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DCMAKE_C_FLAGS=-Wno-deprecated-declarations
+      - -DLINUX_PORTABLE=OFF
+      - -G Ninja
     build-packages:
       - libsimde-dev
+      - ninja-build
     build-snaps:
       - obs-studio/latest/stable
     organize:
       usr/lib/obs-plugins/source-record.so: ${CRAFT_PROJECT_NAME}/plugins/source-record.so
       usr/share/obs/obs-plugins/source-record: ${CRAFT_PROJECT_NAME}/data
     prime:
+      - -usr/lib/*/obs-plugins
       - -usr/obs-plugins
       - -usr/data
