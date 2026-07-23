@@ -1,0 +1,58 @@
+name: source-record-obs-studio
+base: core24
+version: '0.4.8'
+title: Source Record (OBS plugin)
+summary: Record any source in OBS Studio
+description: |
+  Source Record lets you record any source in OBS Studio. This is a filter that
+  provides an individual record button for any source, allowing you to record
+  sources independently from the main output.
+contact: https://github.com/exeldro/obs-source-record/issues
+license: GPL-2.0
+website: https://github.com/exeldro/obs-source-record
+source-code: https://github.com/exeldro/obs-source-record
+issues: https://github.com/exeldro/obs-source-record/issues
+
+grade: stable
+confinement: strict
+
+platforms:
+  amd64:
+
+slots:
+  obs-plugins:
+    interface: content
+    source:
+      read:
+        - /${CRAFT_PROJECT_NAME}
+
+parts:
+  prepare-hook:
+    plugin: nil
+    override-build: |
+      mkdir -p ${CRAFT_PART_INSTALL}/snap/hooks/
+      echo -e '#!/bin/bash\nsnapctl set :obs-plugins snapname='"${CRAFT_PROJECT_NAME}" > ${CRAFT_PART_INSTALL}/snap/hooks/prepare-slot-obs-plugins
+
+  source-record:
+    source: https://github.com/exeldro/obs-source-record.git
+    source-type: git
+    source-tag: 0.4.8
+    plugin: cmake
+    build-environment:
+      - CMAKE_PREFIX_PATH: "/snap/obs-studio/current/usr/"
+    cmake-parameters:
+      - -DBUILD_OUT_OF_TREE=On
+      - -DCMAKE_INSTALL_PREFIX=/usr
+    build-packages:
+      - qt6-base-dev
+      - libsimde-dev
+    build-snaps:
+      - obs-studio/latest/candidate
+    organize:
+      usr/lib/obs-plugins/source-record.so: ${CRAFT_PROJECT_NAME}/plugins/source-record.so
+      usr/share/obs/obs-plugins/source-record: ${CRAFT_PROJECT_NAME}/data
+    prime:
+      - -usr/obs-plugins
+      - -usr/data
+      - -usr/lib
+      - -usr/share
