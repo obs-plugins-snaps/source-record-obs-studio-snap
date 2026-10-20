@@ -17,3 +17,12 @@ sudo snap connect obs-studio:obs-plugins source-record-obs-studio:obs-plugins
 ```
 
 Once connected, Source Record will appear as a filter in OBS Studio. Right-click any source → **Filters** → **+** → **Source Record**.
+
+## Building locally
+
+```shell
+snapcraft
+```
+
+The plugin is built against the libobs headers shipped in the
+`obs-studio` snap, so no local OBS build is required.
