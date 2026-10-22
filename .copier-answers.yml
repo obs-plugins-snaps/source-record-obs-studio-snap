@@ -6,6 +6,6 @@ description: Source Record lets you record any source in OBS Studio. This is a f
     sources independently from the main output.
 license: GPL-2.0
 plugin_name: source-record
-source_tag: 0.1.0
+source_tag: 0.4.8
 source_url: https://github.com/exeldro/obs-source-record.git
 summary: Record any source in OBS Studio
