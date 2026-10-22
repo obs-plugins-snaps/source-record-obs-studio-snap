@@ -1,6 +1,6 @@
 name: source-record-obs-studio
 base: core24
-version: '0.4.8'
+adopt-info: source-record
 title: Source Record (OBS plugin)
 summary: "Record any source in OBS Studio"
 description: |
@@ -50,7 +50,10 @@ parts:
   source-record:
     source: https://github.com/exeldro/obs-source-record.git
     source-type: git
-    source-tag: 0.4.8
+    source-tag: '0.4.8'
+    override-pull: |
+      craftctl default
+      craftctl set version="$(git describe --tags | sed 's/^v\([0-9]\)/\1/')"
     plugin: cmake
     build-environment:
       - CMAKE_PREFIX_PATH: "/snap/obs-studio/current/usr/"
