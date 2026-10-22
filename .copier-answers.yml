@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: v0.0.14
+_commit: v0.0.18
 _src_path: https://github.com/obs-plugins-snaps/template.git
 description: Source Record lets you record any source in OBS Studio. This is a filter
     that provides an individual record button for any source, allowing you to record
