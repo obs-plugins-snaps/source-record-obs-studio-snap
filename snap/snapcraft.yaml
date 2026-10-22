@@ -4,13 +4,7 @@ adopt-info: source-record
 title: Source Record (OBS plugin)
 summary: "Record any source in OBS Studio"
 description: |
-<<<<<<< before updating
-  Source Record lets you record any source in OBS Studio. This is a filter that
-  provides an individual record button for any source, allowing you to record
-  sources independently from the main output.
-=======
   Source Record lets you record any source in OBS Studio. This is a filter that provides an individual record button for any source, allowing you to record sources independently from the main output.
->>>>>>> after updating
 
   **Installation**
 
@@ -31,14 +25,10 @@ contact: https://github.com/obs-plugins-snaps/source-record-obs-studio-snap/issu
 issues: https://github.com/obs-plugins-snaps/source-record-obs-studio-snap/issues
 license: GPL-2.0
 
-<<<<<<< before updating
-grade: stable
-=======
 
 icon: snap/gui/icon.png
 
-grade: devel
->>>>>>> after updating
+grade: stable
 confinement: strict
 
 platforms:
