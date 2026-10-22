@@ -1,6 +1,17 @@
 # Source Record Snap for OBS Studio
 
+<<<<<<< before updating
 This snap delivers [Source Record](https://github.com/exeldro/obs-source-record) to the [OBS Studio snap](https://snapcraft.io/obs-studio). Source Record adds an individual record button to any source, letting you record sources independently from the main output.
+=======
+[![source-record-obs-studio](https://snapcraft.io/source-record-obs-studio/badge.svg)](https://snapcraft.io/source-record-obs-studio)
+
+This snap delivers [source-record](https://github.com/exeldro/obs-source-record) to the
+[OBS Studio snap](https://snapcraft.io/obs-studio).
+
+Source Record lets you record any source in OBS Studio. This is a filter
+that provides an individual record button for any source, allowing you to
+record sources independently from the main output.
+>>>>>>> after updating
 
 ## Installation
 
