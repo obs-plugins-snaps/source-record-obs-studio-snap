@@ -9,13 +9,13 @@ jobs:
     with:
       plugin_name: "source-record"
 
-  # E2E smoke tests against the snap built above (hence `needs: build`,
+  # E2E tests against the snap built above (hence `needs: build`,
   # for the artifact). Not a required check while the suite soaks;
   # promote it to one in branch protection once stable.
   e2e:
     needs: build
     # NOTE (throwaway branch): pinned to the e2e-workflow branch until
     # obs-plugins-snaps/workflows#14 merges; the template pins @main.
-    uses: obs-plugins-snaps/workflows/.github/workflows/e2e-smoke.yml@e2e-workflow
+    uses: obs-plugins-snaps/workflows/.github/workflows/e2e.yml@e2e-workflow
     with:
       plugin_name: "source-record"
