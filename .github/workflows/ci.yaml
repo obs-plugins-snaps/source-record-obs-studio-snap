@@ -19,3 +19,4 @@ jobs:
     uses: obs-plugins-snaps/workflows/.github/workflows/e2e.yml@e2e-workflow
     with:
       plugin_name: "source-record"
+      workflows_ref: e2e-workflow
