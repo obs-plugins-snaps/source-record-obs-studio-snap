@@ -51,7 +51,7 @@ parts:
   source-record:
     source: https://github.com/exeldro/obs-source-record.git
     source-type: git
-    source-tag: '0.4.8'
+    source-tag: '0.5.0'
     override-pull: |
       craftctl default
       craftctl set version="$(git describe --tags | sed 's/^v\([0-9]\)/\1/')"
