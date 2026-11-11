@@ -1,0 +1,1028 @@
+﻿2026-07-23T13:16:12.5261936Z Current runner version: '2.335.1'
+2026-07-23T13:16:12.5297353Z ##[group]Runner Image Provisioner
+2026-07-23T13:16:12.5298633Z Hosted Compute Agent
+2026-07-23T13:16:12.5299524Z Version: 20260707.563
+2026-07-23T13:16:12.5300827Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+2026-07-23T13:16:12.5301965Z Build Date: 2026-07-07T19:33:50Z
+2026-07-23T13:16:12.5303036Z Worker ID: {0557183c-d745-4e6c-83ee-fdb8d0657a5a}
+2026-07-23T13:16:12.5304282Z Azure Region: eastus2
+2026-07-23T13:16:12.5305165Z ##[endgroup]
+2026-07-23T13:16:12.5307445Z ##[group]Operating System
+2026-07-23T13:16:12.5308442Z Ubuntu
+2026-07-23T13:16:12.5309284Z 24.04.4
+2026-07-23T13:16:12.5310667Z LTS
+2026-07-23T13:16:12.5311497Z ##[endgroup]
+2026-07-23T13:16:12.5312307Z ##[group]Runner Image
+2026-07-23T13:16:12.5313492Z Image: ubuntu-24.04
+2026-07-23T13:16:12.5314340Z Version: 20260720.247.2
+2026-07-23T13:16:12.5316285Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260720.247/images/ubuntu/Ubuntu2404-Readme.md
+2026-07-23T13:16:12.5318669Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260720.247
+2026-07-23T13:16:12.5320351Z ##[endgroup]
+2026-07-23T13:16:12.5322130Z ##[group]GITHUB_TOKEN Permissions
+2026-07-23T13:16:12.5325296Z Contents: read
+2026-07-23T13:16:12.5326157Z Metadata: read
+2026-07-23T13:16:12.5327139Z Packages: read
+2026-07-23T13:16:12.5328016Z ##[endgroup]
+2026-07-23T13:16:12.5331215Z Secret source: Actions
+2026-07-23T13:16:12.5332295Z Prepare workflow directory
+2026-07-23T13:16:12.5794708Z Prepare all required actions
+2026-07-23T13:16:12.5850267Z Getting action download info
+2026-07-23T13:16:12.7936256Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-07-23T13:16:13.0832521Z Download action repository 'canonical/craft-actions@main' (SHA:39a1fa1fd30fb8bef5abb80a24f3a06ad6261d17)
+2026-07-23T13:16:13.3539643Z Download action repository 'actions/upload-artifact@v7' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+2026-07-23T13:16:13.5379360Z Getting action download info
+2026-07-23T13:16:13.5619410Z Complete job name: pack
+2026-07-23T13:16:13.6372379Z ##[group]Run actions/checkout@v7
+2026-07-23T13:16:13.6373225Z with:
+2026-07-23T13:16:13.6373767Z   repository: astrojuanlu/source-record-obs-studio-snap
+2026-07-23T13:16:13.6377759Z   token: ***
+2026-07-23T13:16:13.6378195Z   ssh-strict: true
+2026-07-23T13:16:13.6378639Z   ssh-user: git
+2026-07-23T13:16:13.6379078Z   persist-credentials: true
+2026-07-23T13:16:13.6379560Z   clean: true
+2026-07-23T13:16:13.6380227Z   sparse-checkout-cone-mode: true
+2026-07-23T13:16:13.6380748Z   fetch-depth: 1
+2026-07-23T13:16:13.6381178Z   fetch-tags: false
+2026-07-23T13:16:13.6381622Z   show-progress: true
+2026-07-23T13:16:13.6382061Z   lfs: false
+2026-07-23T13:16:13.6382471Z   submodules: false
+2026-07-23T13:16:13.6382920Z   set-safe-directory: true
+2026-07-23T13:16:13.6383421Z   allow-unsafe-pr-checkout: false
+2026-07-23T13:16:13.6384132Z ##[endgroup]
+2026-07-23T13:16:13.7437498Z Syncing repository: astrojuanlu/source-record-obs-studio-snap
+2026-07-23T13:16:13.7440746Z ##[group]Getting Git version info
+2026-07-23T13:16:13.7442227Z Working directory is '/home/runner/work/source-record-obs-studio-snap/source-record-obs-studio-snap'
+2026-07-23T13:16:13.7444292Z [command]/usr/bin/git version
+2026-07-23T13:16:13.7516982Z git version 2.54.0
+2026-07-23T13:16:13.7540982Z ##[endgroup]
+2026-07-23T13:16:13.7588031Z Temporarily overriding HOME='/home/runner/work/_temp/83cc69fe-4e98-4551-baf0-167258640642' before making global git config changes
+2026-07-23T13:16:13.7589604Z Adding repository directory to the temporary git global config as a safe directory
+2026-07-23T13:16:13.7591654Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/source-record-obs-studio-snap/source-record-obs-studio-snap
+2026-07-23T13:16:13.7612309Z Deleting the contents of '/home/runner/work/source-record-obs-studio-snap/source-record-obs-studio-snap'
+2026-07-23T13:16:13.7615820Z ##[group]Determining repository object format
+2026-07-23T13:16:13.7618278Z ##[endgroup]
+2026-07-23T13:16:13.7620055Z ##[group]Initializing the repository
+2026-07-23T13:16:13.7624726Z [command]/usr/bin/git init /home/runner/work/source-record-obs-studio-snap/source-record-obs-studio-snap
+2026-07-23T13:16:13.8685178Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-07-23T13:16:13.8686565Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-07-23T13:16:13.8687632Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-07-23T13:16:13.8688506Z hint: call:
+2026-07-23T13:16:13.8689198Z hint:
+2026-07-23T13:16:13.8690336Z hint: 	git config --global init.defaultBranch <name>
+2026-07-23T13:16:13.8691100Z hint:
+2026-07-23T13:16:13.8692178Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-07-23T13:16:13.8693620Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-07-23T13:16:13.8694535Z hint:
+2026-07-23T13:16:13.8695203Z hint: 	git branch -m <name>
+2026-07-23T13:16:13.8695793Z hint:
+2026-07-23T13:16:13.8696604Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-07-23T13:16:13.8698219Z Initialized empty Git repository in /home/runner/work/source-record-obs-studio-snap/source-record-obs-studio-snap/.git/
+2026-07-23T13:16:13.8701480Z [command]/usr/bin/git remote add origin https://github.com/astrojuanlu/source-record-obs-studio-snap
+2026-07-23T13:16:13.8744738Z ##[endgroup]
+2026-07-23T13:16:13.8745670Z ##[group]Disabling automatic garbage collection
+2026-07-23T13:16:13.8747508Z [command]/usr/bin/git config --local gc.auto 0
+2026-07-23T13:16:13.8781321Z ##[endgroup]
+2026-07-23T13:16:13.8782409Z ##[group]Setting up auth
+2026-07-23T13:16:13.8783147Z Removing SSH command configuration
+2026-07-23T13:16:13.8787617Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-07-23T13:16:13.8823584Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-07-23T13:16:13.9141302Z Removing HTTP extra header
+2026-07-23T13:16:13.9146894Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-07-23T13:16:13.9181048Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-07-23T13:16:13.9416976Z Removing includeIf entries pointing to credentials config files
+2026-07-23T13:16:13.9422466Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-07-23T13:16:13.9454662Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-07-23T13:16:13.9699509Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-12e11f52-e391-414a-9a74-72fe3c1ab7a3.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-07-23T13:16:13.9740733Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/source-record-obs-studio-snap/source-record-obs-studio-snap/.git.path /home/runner/work/_temp/git-credentials-12e11f52-e391-414a-9a74-72fe3c1ab7a3.config
+2026-07-23T13:16:13.9772766Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/source-record-obs-studio-snap/source-record-obs-studio-snap/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-12e11f52-e391-414a-9a74-72fe3c1ab7a3.config
+2026-07-23T13:16:13.9808120Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-12e11f52-e391-414a-9a74-72fe3c1ab7a3.config
+2026-07-23T13:16:13.9839707Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-12e11f52-e391-414a-9a74-72fe3c1ab7a3.config
+2026-07-23T13:16:13.9868675Z ##[endgroup]
+2026-07-23T13:16:13.9869675Z ##[group]Fetching the repository
+2026-07-23T13:16:13.9876309Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +9235eb47cfdeb12b1896183bf005ee0ac6f05128:refs/remotes/pull/1/merge
+2026-07-23T13:16:14.1918143Z From https://github.com/astrojuanlu/source-record-obs-studio-snap
+2026-07-23T13:16:14.1920207Z  * [new ref]         9235eb47cfdeb12b1896183bf005ee0ac6f05128 -> pull/1/merge
+2026-07-23T13:16:14.1961004Z ##[endgroup]
+2026-07-23T13:16:14.1962254Z ##[group]Determining the checkout info
+2026-07-23T13:16:14.1963830Z ##[endgroup]
+2026-07-23T13:16:14.1969807Z [command]/usr/bin/git sparse-checkout disable
+2026-07-23T13:16:14.2022679Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-07-23T13:16:14.2056268Z ##[group]Checking out the ref
+2026-07-23T13:16:14.2059645Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/1/merge
+2026-07-23T13:16:14.2106113Z Note: switching to 'refs/remotes/pull/1/merge'.
+2026-07-23T13:16:14.2107094Z 
+2026-07-23T13:16:14.2107691Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-07-23T13:16:14.2109147Z changes and commit them, and you can discard any commits you make in this
+2026-07-23T13:16:14.2111410Z state without impacting any branches by switching back to a branch.
+2026-07-23T13:16:14.2112639Z 
+2026-07-23T13:16:14.2113425Z If you want to create a new branch to retain commits you create, you may
+2026-07-23T13:16:14.2115226Z do so (now or later) by using -c with the switch command. Example:
+2026-07-23T13:16:14.2116484Z 
+2026-07-23T13:16:14.2116913Z   git switch -c <new-branch-name>
+2026-07-23T13:16:14.2117595Z 
+2026-07-23T13:16:14.2118055Z Or undo this operation with:
+2026-07-23T13:16:14.2118704Z 
+2026-07-23T13:16:14.2119267Z   git switch -
+2026-07-23T13:16:14.2119785Z 
+2026-07-23T13:16:14.2120984Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-07-23T13:16:14.2122204Z 
+2026-07-23T13:16:14.2123941Z HEAD is now at 9235eb4 Merge d96b8f65809a4e0f81f8d920990050e547316c7b into b14f7e719e393ef56edf5eba2e964f0d50670bb9
+2026-07-23T13:16:14.2128025Z ##[endgroup]
+2026-07-23T13:16:14.2160345Z [command]/usr/bin/git log -1 --format=%H
+2026-07-23T13:16:14.2186577Z 9235eb47cfdeb12b1896183bf005ee0ac6f05128
+2026-07-23T13:16:14.2649611Z ##[group]Run canonical/craft-actions/snapcraft/pack@main
+2026-07-23T13:16:14.2650786Z with:
+2026-07-23T13:16:14.2651221Z   path: .
+2026-07-23T13:16:14.2651640Z   verbosity: trace
+2026-07-23T13:16:14.2652112Z   channel: latest/stable
+2026-07-23T13:16:14.2652626Z   lxd-channel: 5.21/stable
+2026-07-23T13:16:14.2653138Z ##[endgroup]
+2026-07-23T13:16:14.2733973Z ##[start-action display=Stage actions from adjacent action directory;id=pack.__run]
+2026-07-23T13:16:14.2785339Z ##[group]Run mkdir -p _tmp_snapcraft-pack-actions
+2026-07-23T13:16:14.2786321Z [36;1mmkdir -p _tmp_snapcraft-pack-actions[0m
+2026-07-23T13:16:14.2787140Z [36;1mcp -r "$ACTION_PATH"/../../{snapcraft,_common} \[0m
+2026-07-23T13:16:14.2787948Z [36;1m  _tmp_snapcraft-pack-actions/[0m
+2026-07-23T13:16:14.2840817Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-07-23T13:16:14.2841626Z env:
+2026-07-23T13:16:14.2842475Z   ACTION_PATH: /home/runner/work/_actions/canonical/craft-actions/main/snapcraft/pack
+2026-07-23T13:16:14.2843428Z ##[endgroup]
+2026-07-23T13:16:14.3001677Z ##[end-action id=pack.__run;outcome=success;conclusion=success;duration_ms=26]
+2026-07-23T13:16:14.3006881Z ##[start-action display=Run ./_tmp_snapcraft-pack-actions/snapcraft/setup;id=pack.setup]
+2026-07-23T13:16:14.3060165Z ##[group]Run ./_tmp_snapcraft-pack-actions/snapcraft/setup
+2026-07-23T13:16:14.3060937Z with:
+2026-07-23T13:16:14.3061360Z   channel: latest/stable
+2026-07-23T13:16:14.3061865Z   lxd-channel: 5.21/stable
+2026-07-23T13:16:14.3062365Z ##[endgroup]
+2026-07-23T13:16:14.3886515Z ##[group]Installing snapcraft and its dependencies
+2026-07-23T13:16:14.3898147Z Installing LXD...
+2026-07-23T13:16:14.3925580Z [command]/usr/bin/sudo snap install lxd --channel 5.21/stable --cohort +
+2026-07-23T13:16:18.8305369Z 2026-07-23T13:16:18Z INFO Waiting for automatic snapd restart...
+2026-07-23T13:16:19.0354635Z 2026-07-23T13:16:19Z INFO Waiting for automatic snapd restart...
+2026-07-23T13:16:20.8439171Z 2026-07-23T13:16:20Z INFO Waiting for automatic snapd restart...
+2026-07-23T13:16:21.3591978Z 2026-07-23T13:16:21Z INFO Waiting for automatic snapd restart...
+2026-07-23T13:16:37.7588071Z lxd (5.21/stable) 5.21.5-f2a1a0e from Canonical** installed
+2026-07-23T13:16:37.7630682Z Setting daemon group on LXD snap to adm...
+2026-07-23T13:16:37.7654364Z [command]/usr/bin/sudo snap set lxd daemon.group=adm
+2026-07-23T13:16:47.2531177Z Initialising LXD...
+2026-07-23T13:16:47.2546975Z [command]/usr/bin/sudo lxd init --auto
+2026-07-23T13:16:49.2638119Z Installed docker related packages might interfere with LXD networking: 
+2026-07-23T13:16:49.2653231Z [command]/usr/bin/sudo iptables -P FORWARD ACCEPT
+2026-07-23T13:16:49.2842818Z Installing snapcraft...
+2026-07-23T13:16:49.2852981Z [command]/usr/bin/sudo snap install --channel latest/stable --classic snapcraft
+2026-07-23T13:16:58.0038418Z snapcraft 9.0.1 from Canonical** installed
+2026-07-23T13:16:58.0579526Z ##[endgroup]
+2026-07-23T13:16:58.0689538Z ##[end-action id=pack.setup;outcome=success;conclusion=success;duration_ms=43768]
+2026-07-23T13:16:58.0696893Z ##[start-action display=Run rm -rf ./_tmp_snapcraft-pack-actions;id=pack.__run_2]
+2026-07-23T13:16:58.0727973Z ##[group]Run rm -rf ./_tmp_snapcraft-pack-actions
+2026-07-23T13:16:58.0728376Z [36;1mrm -rf ./_tmp_snapcraft-pack-actions[0m
+2026-07-23T13:16:58.0778049Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-07-23T13:16:58.0778420Z ##[endgroup]
+2026-07-23T13:16:58.0873566Z ##[end-action id=pack.__run_2;outcome=success;conclusion=success;duration_ms=17]
+2026-07-23T13:16:58.0878365Z ##[start-action display=Run # Snapcraft < 8 doesn't fully support `snapcraft pack`.;id=pack.pack]
+2026-07-23T13:16:58.0904082Z ##[group]Run # Snapcraft < 8 doesn't fully support `snapcraft pack`.
+2026-07-23T13:16:58.0904640Z [36;1m# Snapcraft < 8 doesn't fully support `snapcraft pack`.[0m
+2026-07-23T13:16:58.0905028Z [36;1m# Examples of running `snapcraft --version`:[0m
+2026-07-23T13:16:58.0905371Z [36;1m#   snapcraft 8.14.0.post57+dirty[0m
+2026-07-23T13:16:58.0905958Z [36;1m#   snapcraft 8.14.2[0m
+2026-07-23T13:16:58.0906218Z [36;1m#   snapcraft 7.5.9[0m
+2026-07-23T13:16:58.0906499Z [36;1m#   snapcraft, version 6.1[0m
+2026-07-23T13:16:58.0906925Z [36;1mSNAPCRAFT_VERSION=$(snapcraft --version | awk '{print $NF}')[0m
+2026-07-23T13:16:58.0907372Z [36;1mMAJOR_VERSION=$(echo "$SNAPCRAFT_VERSION" | cut -d'.' -f1)[0m
+2026-07-23T13:16:58.0907820Z [36;1mif [[ "$MAJOR_VERSION" =~ ^[0-9]+$ ]] && [ "$MAJOR_VERSION" -lt 8 ]; then[0m
+2026-07-23T13:16:58.0908190Z [36;1m  snapcraft[0m
+2026-07-23T13:16:58.0908411Z [36;1melse[0m
+2026-07-23T13:16:58.0908629Z [36;1m  snapcraft pack[0m
+2026-07-23T13:16:58.0908863Z [36;1mfi[0m
+2026-07-23T13:16:58.0909121Z [36;1mecho "snap=$(ls *.snap)" >> "$GITHUB_OUTPUT"[0m
+2026-07-23T13:16:58.0909434Z [36;1mcomponents=( *.comp )[0m
+2026-07-23T13:16:58.0909707Z [36;1mif [ -e "${components[0]}" ]; then[0m
+2026-07-23T13:16:58.0910260Z [36;1m  echo "components=${components[*]}" >> "$GITHUB_OUTPUT"[0m
+2026-07-23T13:16:58.0910594Z [36;1melse[0m
+2026-07-23T13:16:58.0910828Z [36;1m  echo "components=" >> "$GITHUB_OUTPUT"[0m
+2026-07-23T13:16:58.0911108Z [36;1mfi[0m
+2026-07-23T13:16:58.0958320Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-07-23T13:16:58.0958683Z env:
+2026-07-23T13:16:58.0958898Z   CRAFT_VERBOSITY_LEVEL: trace
+2026-07-23T13:16:58.0959156Z ##[endgroup]
+2026-07-23T13:17:00.2005399Z 2026-07-23 13:17:00.200 Starting snapcraft, version 9.0.1
+2026-07-23T13:17:00.2007625Z 2026-07-23 13:17:00.200 Logging execution to '/home/runner/.local/state/snapcraft/log/snapcraft-20260723-131700.199387.log'
+2026-07-23T13:17:00.2008662Z 2026-07-23 13:17:00.200 Log verbosity level set to TRACE
+2026-07-23T13:17:00.2009726Z 2026-07-23 13:17:00.200 Setting up Project
+2026-07-23T13:17:00.2010961Z 2026-07-23 13:17:00.200 Project file found at '/home/runner/work/source-record-obs-studio-snap/source-record-obs-studio-snap/snap/snapcraft.yaml'
+2026-07-23T13:17:00.2012116Z 2026-07-23 13:17:00.200 Loading project file 'snap/snapcraft.yaml
+2026-07-23T13:17:00.2048894Z 2026-07-23 13:17:00.204 Registering plugins...
+2026-07-23T13:17:00.2049682Z 2026-07-23 13:17:00.204 Plugins: colcon, conda, flutter, matter-sdk, poetry, python, uv
+2026-07-23T13:17:00.2050743Z 2026-07-23 13:17:00.204 Setting up BuildPlan
+2026-07-23T13:17:00.2059655Z 2026-07-23 13:17:00.205 Build plan contains 1 build(s).
+2026-07-23T13:17:00.2061129Z 2026-07-23 13:17:00.205 Build plan: [BuildInfo(platform='amd64', build_on='amd64', build_for='amd64', build_base=DistroBase(distribution='ubuntu', series='24.04'))]
+2026-07-23T13:17:00.2104517Z 2026-07-23 13:17:00.210 Preparing application...
+2026-07-23T13:17:00.2105292Z 2026-07-23 13:17:00.210 Setting up ConfigService
+2026-07-23T13:17:00.2166624Z 2026-07-23 13:17:00.216 Merging commands for group 'Lifecycle':
+2026-07-23T13:17:00.2167678Z 2026-07-23 13:17:00.216   - using application command for 'clean'.
+2026-07-23T13:17:00.2172849Z 2026-07-23 13:17:00.216   - using application command for 'pull'.
+2026-07-23T13:17:00.2173692Z 2026-07-23 13:17:00.216   - using application command for 'build'.
+2026-07-23T13:17:00.2174407Z 2026-07-23 13:17:00.216   - using application command for 'stage'.
+2026-07-23T13:17:00.2175122Z 2026-07-23 13:17:00.216   - using application command for 'prime'.
+2026-07-23T13:17:00.2175931Z 2026-07-23 13:17:00.216   - using application command for 'pack'.
+2026-07-23T13:17:00.2176623Z 2026-07-23 13:17:00.216 Merging commands for group 'Other':
+2026-07-23T13:17:00.2177276Z 2026-07-23 13:17:00.216 pre-parsing arguments...
+2026-07-23T13:17:00.2178356Z 2026-07-23 13:17:00.216 Raw pre-parsed sysargs: args={'help': False, 'verbose': False, 'quiet': False, 'verbosity': None, 'version': True} filtered=['pull']
+2026-07-23T13:17:00.2179520Z 2026-07-23 13:17:00.217 General parsed sysargs: command='pull' args=[]
+2026-07-23T13:17:02.1832578Z 2026-07-23 13:17:02.183 Starting snapcraft, version 9.0.1
+2026-07-23T13:17:02.1834018Z 2026-07-23 13:17:02.183 Logging execution to '/home/runner/.local/state/snapcraft/log/snapcraft-20260723-131702.182206.log'
+2026-07-23T13:17:02.1834994Z 2026-07-23 13:17:02.183 Log verbosity level set to TRACE
+2026-07-23T13:17:02.1835745Z 2026-07-23 13:17:02.183 Setting up Project
+2026-07-23T13:17:02.1836757Z 2026-07-23 13:17:02.183 Project file found at '/home/runner/work/source-record-obs-studio-snap/source-record-obs-studio-snap/snap/snapcraft.yaml'
+2026-07-23T13:17:02.1837837Z 2026-07-23 13:17:02.183 Loading project file 'snap/snapcraft.yaml
+2026-07-23T13:17:02.1863545Z 2026-07-23 13:17:02.186 Registering plugins...
+2026-07-23T13:17:02.1864258Z 2026-07-23 13:17:02.186 Plugins: colcon, conda, flutter, matter-sdk, poetry, python, uv
+2026-07-23T13:17:02.1864979Z 2026-07-23 13:17:02.186 Setting up BuildPlan
+2026-07-23T13:17:02.1873094Z 2026-07-23 13:17:02.187 Build plan contains 1 build(s).
+2026-07-23T13:17:02.1874511Z 2026-07-23 13:17:02.187 Build plan: [BuildInfo(platform='amd64', build_on='amd64', build_for='amd64', build_base=DistroBase(distribution='ubuntu', series='24.04'))]
+2026-07-23T13:17:02.1916590Z 2026-07-23 13:17:02.191 Preparing application...
+2026-07-23T13:17:02.1917270Z 2026-07-23 13:17:02.191 Setting up ConfigService
+2026-07-23T13:17:02.1975455Z 2026-07-23 13:17:02.197 Merging commands for group 'Lifecycle':
+2026-07-23T13:17:02.1976257Z 2026-07-23 13:17:02.197   - using application command for 'clean'.
+2026-07-23T13:17:02.1976867Z 2026-07-23 13:17:02.197   - using application command for 'pull'.
+2026-07-23T13:17:02.1977263Z 2026-07-23 13:17:02.197   - using application command for 'build'.
+2026-07-23T13:17:02.1977845Z 2026-07-23 13:17:02.197   - using application command for 'stage'.
+2026-07-23T13:17:02.1978406Z 2026-07-23 13:17:02.197   - using application command for 'prime'.
+2026-07-23T13:17:02.1979461Z 2026-07-23 13:17:02.197   - using application command for 'pack'.
+2026-07-23T13:17:02.1980226Z 2026-07-23 13:17:02.197 Merging commands for group 'Other':
+2026-07-23T13:17:02.1980721Z 2026-07-23 13:17:02.197 pre-parsing arguments...
+2026-07-23T13:17:02.1981725Z 2026-07-23 13:17:02.197 Raw pre-parsed sysargs: args={'help': False, 'verbose': False, 'quiet': False, 'verbosity': None, 'version': False} filtered=['pack']
+2026-07-23T13:17:02.1982741Z 2026-07-23 13:17:02.197 General parsed sysargs: command='pack' args=[]
+2026-07-23T13:17:02.1983297Z 2026-07-23 13:17:02.197 Configuring application...
+2026-07-23T13:17:02.2001943Z 2026-07-23 13:17:02.199 Command parsed sysargs: Namespace(destructive_mode=False, use_lxd=False, shell=False, shell_after=False, debug=False, platform=None, build_for=None, output=PosixPath('.'), fetch_service_policy=None, directory=None)
+2026-07-23T13:17:02.2097021Z 2026-07-23 13:17:02.209 Build plan: platform=None, build_for=None
+2026-07-23T13:17:02.2097896Z 2026-07-23 13:17:02.209 Loading project because a directory was not provided.
+2026-07-23T13:17:02.2101649Z 2026-07-23 13:17:02.210 Running snapcraft pack on host
+2026-07-23T13:17:02.2149764Z 2026-07-23 13:17:02.214 lifecycle command: 'pack', arguments: Namespace(destructive_mode=False, use_lxd=False, shell=False, shell_after=False, debug=False, platform=None, build_for=None, output=PosixPath('.'), fetch_service_policy=None, directory=None)
+2026-07-23T13:17:02.2334549Z 2026-07-23 13:17:02.233 Setting up Provider
+2026-07-23T13:17:02.2907586Z 2026-07-23 13:17:02.290 Setting snapcraft to be injected from the host into the build environment.
+2026-07-23T13:17:02.3214481Z 2026-07-23 13:17:02.321 Running managed snapcraft in managed ubuntu@24.04 instance for platform 'amd64'
+2026-07-23T13:17:02.3215352Z 2026-07-23 13:17:02.321 active_fetch_service=False
+2026-07-23T13:17:02.3227474Z 2026-07-23 13:17:02.322 Created project variables {'version': {'value': '0.4.8', 'updated': False, 'part-name': None}, 'grade': {'value': 'stable', 'updated': False, 'part-name': None}}.
+2026-07-23T13:17:02.3241211Z 2026-07-23 13:17:02.323 Using parallel build count of 4 from CPU count
+2026-07-23T13:17:02.3243729Z 2026-07-23 13:17:02.324 Checking if 'version' exists.
+2026-07-23T13:17:02.3245401Z 2026-07-23 13:17:02.324 Getting value for 'version'.
+2026-07-23T13:17:02.3246048Z 2026-07-23 13:17:02.324 Got '0.4.8' (updated=False) for 'version'.
+2026-07-23T13:17:02.3246530Z 2026-07-23 13:17:02.324 'version' exists.
+2026-07-23T13:17:02.3246940Z 2026-07-23 13:17:02.324 Getting value for 'version'.
+2026-07-23T13:17:02.3247592Z 2026-07-23 13:17:02.324 Got '0.4.8' (updated=False) for 'version'.
+2026-07-23T13:17:02.3248123Z 2026-07-23 13:17:02.324 Checking if 'version' exists.
+2026-07-23T13:17:02.3248638Z 2026-07-23 13:17:02.324 Getting value for 'version'.
+2026-07-23T13:17:02.3249191Z 2026-07-23 13:17:02.324 Got '0.4.8' (updated=False) for 'version'.
+2026-07-23T13:17:02.3249739Z 2026-07-23 13:17:02.324 'version' exists.
+2026-07-23T13:17:02.3250415Z 2026-07-23 13:17:02.324 Getting value for 'version'.
+2026-07-23T13:17:02.3250876Z 2026-07-23 13:17:02.324 Got '0.4.8' (updated=False) for 'version'.
+2026-07-23T13:17:02.3251401Z 2026-07-23 13:17:02.324 Checking if 'grade' exists.
+2026-07-23T13:17:02.3251759Z 2026-07-23 13:17:02.325 Getting value for 'grade'.
+2026-07-23T13:17:02.3252275Z 2026-07-23 13:17:02.325 Got 'stable' (updated=False) for 'grade'.
+2026-07-23T13:17:02.3252907Z 2026-07-23 13:17:02.325 'grade' exists.
+2026-07-23T13:17:02.3253448Z 2026-07-23 13:17:02.325 Getting value for 'grade'.
+2026-07-23T13:17:02.3254307Z 2026-07-23 13:17:02.325 Got 'stable' (updated=False) for 'grade'.
+2026-07-23T13:17:02.3259588Z 2026-07-23 13:17:02.325 Processing grammar (on amd64 for amd64)
+2026-07-23T13:17:02.3260426Z 2026-07-23 13:17:02.325 Processing grammar for plugin: nil
+2026-07-23T13:17:02.3261290Z 2026-07-23 13:17:02.326 Processing grammar for override-build: mkdir -p ${CRAFT_PART_INSTALL}/snap/hooks/
+2026-07-23T13:17:02.3262946Z echo -e '#!/bin/bash\nsnapctl set :obs-plugins snapname='"source-record-obs-studio" > ${CRAFT_PART_INSTALL}/snap/hooks/prepare-slot-obs-plugins
+2026-07-23T13:17:02.3264570Z 2026-07-23 13:17:02.326 Processing grammar for source: https://github.com/exeldro/obs-source-record.git
+2026-07-23T13:17:02.3265252Z 2026-07-23 13:17:02.326 Processing grammar for source-type: git
+2026-07-23T13:17:02.3265789Z 2026-07-23 13:17:02.326 Processing grammar for source-tag: 0.4.8
+2026-07-23T13:17:02.3266180Z 2026-07-23 13:17:02.326 Processing grammar for plugin: cmake
+2026-07-23T13:17:02.3266741Z 2026-07-23 13:17:02.326 Processing grammar for build-environment: [{'CMAKE_PREFIX_PATH': '/snap/obs-studio/current/usr/'}]
+2026-07-23T13:17:02.3267649Z 2026-07-23 13:17:02.326 Not processing grammar for non-grammar enabled keyword cmake-parameters
+2026-07-23T13:17:02.3268396Z 2026-07-23 13:17:02.326 Processing grammar for build-packages: ['libsimde-dev']
+2026-07-23T13:17:02.3269147Z 2026-07-23 13:17:02.326 Processing grammar for build-snaps: ['obs-studio/latest/candidate']
+2026-07-23T13:17:02.3270812Z 2026-07-23 13:17:02.326 Processing grammar for organize: {'usr/lib/obs-plugins/source-record.so': 'source-record-obs-studio/plugins/source-record.so', 'usr/share/obs/obs-plugins/source-record': 'source-record-obs-studio/data'}
+2026-07-23T13:17:02.3273446Z 2026-07-23 13:17:02.326 Processing grammar for prime: ['-usr/obs-plugins', '-usr/data']
+2026-07-23T13:17:02.3956338Z 2026-07-23 13:17:02.395 Preparing managed instance 'snapcraft-source-record-obs-studio-amd64-8662196'
+2026-07-23T13:17:02.3957419Z 2026-07-23 13:17:02.395 Using hostname 'snapcraft-source-record-obs-studio-amd64-8662196'
+2026-07-23T13:17:02.4077433Z 2026-07-23 13:17:02.407 Retrieved snap config: {}
+2026-07-23T13:17:02.4078123Z 2026-07-23 13:17:02.407 Using default provider 'lxd' on linux system.
+2026-07-23T13:17:02.4131192Z 2026-07-23 13:17:02.412 Checking if LXD is installed.
+2026-07-23T13:17:02.4469329Z 2026-07-23 13:17:02.446 LXD snap status: active
+2026-07-23T13:17:02.4474698Z 2026-07-23 13:17:02.447 Checking if LXD is installed.
+2026-07-23T13:17:02.4779259Z 2026-07-23 13:17:02.477 LXD snap status: active
+2026-07-23T13:17:02.4932359Z 2026-07-23 13:17:02.493 Executing on host: lxc --project default profile show local:default
+2026-07-23T13:17:02.6193143Z 2026-07-23 13:17:02.619 Launching managed ubuntu 24.04 instance...
+2026-07-23T13:17:02.6193904Z 2026-07-23 13:17:02.619 Executing on host: lxc remote list --format=yaml
+2026-07-23T13:17:02.7278633Z 2026-07-23 13:17:02.727 Executing on host: lxc remote add craft-com.ubuntu.cloud-buildd https://cloud-images.ubuntu.com/buildd/releases --protocol=simplestreams
+2026-07-23T13:17:02.8313204Z 2026-07-23 13:17:02.831 Remote 'craft-com.ubuntu.cloud-buildd' was successfully added.
+2026-07-23T13:17:02.8314210Z 2026-07-23 13:17:02.831 Executing on host: lxc project list local: --format=yaml
+2026-07-23T13:17:02.9461526Z 2026-07-23 13:17:02.945 Executing on host: lxc --project snapcraft project create local:snapcraft
+2026-07-23T13:17:03.0562706Z 2026-07-23 13:17:03.056 Executing on host: lxc --project default profile show local:default
+2026-07-23T13:17:03.1662934Z 2026-07-23 13:17:03.166 Executing on host: lxc --project snapcraft profile edit local:default
+2026-07-23T13:17:03.2781133Z 2026-07-23 13:17:03.277 Converted name 'snapcraft-source-record-obs-studio-amd64-8662196' to instance name 'snapcraft-source-record-obs-studio-amd64-8662196'
+2026-07-23T13:17:03.2809068Z 2026-07-23 13:17:03.280 Checking for instance 'snapcraft-source-record-obs-studio-amd64-8662196' in project 'snapcraft' in remote 'local'
+2026-07-23T13:17:03.2826821Z 2026-07-23 13:17:03.282 Instance 'snapcraft-source-record-obs-studio-amd64-8662196' does not exist.
+2026-07-23T13:17:03.2828620Z 2026-07-23 13:17:03.282 Converted name 'base-instance-snapcraft-buildd-base-v7.1-craft-com.ubuntu.cloud-buildd-core24' to instance name 'base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924'
+2026-07-23T13:17:03.2849545Z 2026-07-23 13:17:03.284 Checking for base instance 'base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924' in project 'snapcraft' in remote 'local'
+2026-07-23T13:17:03.2865521Z 2026-07-23 13:17:03.286 Base instance 'base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924' does not exist.
+2026-07-23T13:17:03.2866437Z 2026-07-23 13:17:03.286 Creating new instance from remote
+2026-07-23T13:17:03.2867003Z 2026-07-23 13:17:03.286 Creating new base instance from remote
+2026-07-23T13:17:03.2867681Z 2026-07-23 13:17:03.286 Creating new base instance from image 'core24' from remote 'craft-com.ubuntu.cloud-buildd'
+2026-07-23T13:17:03.2868463Z 2026-07-23 13:17:03.286 Executing on host: lxc --project snapcraft info local:
+2026-07-23T13:17:03.4118404Z 2026-07-23 13:17:03.411 Executing on host: lxc --project snapcraft launch craft-com.ubuntu.cloud-buildd:core24 local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 --config 'raw.idmap=uid 1001 0
+2026-07-23T13:17:03.4120237Z gid 1001 0' --config security.syscalls.intercept.mknod=true --config user.craft_providers.status=STARTING --config user.craft_providers.timer=2026-07-23T13:17:03.411370+00:00 --config user.craft_providers.pid=5135
+2026-07-23T13:17:11.8064118Z 2026-07-23 13:17:11.805 Successfully launched instance base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924.
+2026-07-23T13:17:11.8065610Z 2026-07-23 13:17:11.806 Executing on host: lxc --project snapcraft config get local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.status
+2026-07-23T13:17:11.9378389Z 2026-07-23 13:17:11.937 Setting up base instance 'base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924'
+2026-07-23T13:17:11.9381812Z 2026-07-23 13:17:11.937 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.status PREPARING
+2026-07-23T13:17:12.1354057Z 2026-07-23 13:17:12.135 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:17:12.134872+00:00
+2026-07-23T13:17:12.1361728Z 2026-07-23 13:17:12.135 Preparing instance
+2026-07-23T13:17:12.1362517Z 2026-07-23 13:17:12.135 Setting up ProxyService
+2026-07-23T13:17:12.1363447Z 2026-07-23 13:17:12.135 Skipping proxy configuration because the proxy service isn't configured.
+2026-07-23T13:17:12.1386151Z 2026-07-23 13:17:12.138 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-07-23T13:17:12.3631532Z 2026-07-23 13:17:12.362 Set instance timer to '2026-07-23T13:17:12.134872+00:00'
+2026-07-23T13:17:12.4057541Z 2026-07-23 13:17:12.405 Executing on host: lxc --project snapcraft file push /tmp/tmp8xusgah2 local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/craft-instance.conf --mode=0644
+2026-07-23T13:17:12.5587438Z 2026-07-23 13:17:12.558 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chown root:root /etc/craft-instance.conf
+2026-07-23T13:17:13.2411652Z 2026-07-23 13:17:13.240 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical cat /etc/os-release
+2026-07-23T13:17:13.5980875Z 2026-07-23 13:17:13.597 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-07-23T13:17:14.0638050Z 2026-07-23 13:17:14.063 Executing on host: lxc --project snapcraft file pull local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/craft-instance.conf /home/runner/tmp8dph190q.tmp-craft/tmp1ubnpoej
+2026-07-23T13:17:14.1757475Z 2026-07-23 13:17:14.175 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-07-23T13:17:14.3409338Z 2026-07-23 13:17:14.340 Executing on host: lxc --project snapcraft file pull local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/craft-instance.conf /home/runner/tmpwezvl_xh.tmp-craft/tmpzijtl9da
+2026-07-23T13:17:14.4539796Z 2026-07-23 13:17:14.453 Executing on host: lxc --project snapcraft file push /tmp/tmp5ekx8bv3 local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/craft-instance.conf --mode=0644
+2026-07-23T13:17:14.5635684Z 2026-07-23 13:17:14.563 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chown root:root /etc/craft-instance.conf
+2026-07-23T13:17:14.6972301Z 2026-07-23 13:17:14.696 Executing on host: lxc --project snapcraft file push /tmp/tmpeyfy_69s local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/environment --mode=0644
+2026-07-23T13:17:14.8074117Z 2026-07-23 13:17:14.806 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chown root:root /etc/environment
+2026-07-23T13:17:14.9391311Z 2026-07-23 13:17:14.938 Executing on host: lxc --project snapcraft file push /tmp/tmp1ph4xpuy local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/apt/apt.conf.d/20auto-upgrades --mode=0644
+2026-07-23T13:17:15.0495200Z 2026-07-23 13:17:15.048 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chown root:root /etc/apt/apt.conf.d/20auto-upgrades
+2026-07-23T13:17:15.1789100Z 2026-07-23 13:17:15.178 Waiting for environment to be ready...
+2026-07-23T13:17:15.1791798Z 2026-07-23 13:17:15.178 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical systemctl is-system-running
+2026-07-23T13:17:15.3144462Z 2026-07-23 13:17:15.314 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chmod go+x /root
+2026-07-23T13:17:15.3636751Z 2026-07-23 13:17:15.363 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:17:15.363150+00:00
+2026-07-23T13:17:15.4533523Z 2026-07-23 13:17:15.452 Executing on host: lxc --project snapcraft file push /tmp/tmpt6e1kx67 local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/hostname --mode=0644
+2026-07-23T13:17:15.5017235Z 2026-07-23 13:17:15.501 Set instance timer to '2026-07-23T13:17:15.363150+00:00'
+2026-07-23T13:17:15.6140257Z 2026-07-23 13:17:15.613 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chown root:root /etc/hostname
+2026-07-23T13:17:15.7442377Z 2026-07-23 13:17:15.743 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical hostname -F /etc/hostname
+2026-07-23T13:17:15.8743054Z 2026-07-23 13:17:15.873 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
+2026-07-23T13:17:15.9976122Z 2026-07-23 13:17:15.997 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical systemctl enable systemd-resolved
+2026-07-23T13:17:16.2392019Z 2026-07-23 13:17:16.238 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical systemctl restart systemd-resolved
+2026-07-23T13:17:16.8099552Z 2026-07-23 13:17:16.809 Executing on host: lxc --project snapcraft file push /tmp/tmp2u4vm5b6 local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/systemd/network/10-eth0.network --mode=0644
+2026-07-23T13:17:16.9251725Z 2026-07-23 13:17:16.924 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chown root:root /etc/systemd/network/10-eth0.network
+2026-07-23T13:17:17.0537729Z 2026-07-23 13:17:17.053 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical systemctl enable systemd-networkd
+2026-07-23T13:17:17.3032733Z 2026-07-23 13:17:17.302 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical systemctl restart systemd-networkd
+2026-07-23T13:17:17.6557755Z 2026-07-23 13:17:17.655 Waiting for networking to be ready...
+2026-07-23T13:17:17.6564360Z 2026-07-23 13:17:17.656 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical getent hosts snapcraft.io
+2026-07-23T13:17:17.9184496Z 2026-07-23 13:17:17.917 Executing on host: lxc --project snapcraft file push /tmp/tmp7ujj4h7p local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/apt/apt.conf.d/00no-recommends --mode=0644
+2026-07-23T13:17:18.0678062Z 2026-07-23 13:17:18.067 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chown root:root /etc/apt/apt.conf.d/00no-recommends
+2026-07-23T13:17:18.2110182Z 2026-07-23 13:17:18.210 Executing on host: lxc --project snapcraft file push /tmp/tmpe753nx4x local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/apt/apt.conf.d/00update-errors --mode=0644
+2026-07-23T13:17:18.3276100Z 2026-07-23 13:17:18.327 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chown root:root /etc/apt/apt.conf.d/00update-errors
+2026-07-23T13:17:18.4592421Z 2026-07-23 13:17:18.458 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical cat /etc/os-release
+2026-07-23T13:17:18.5024920Z 2026-07-23 13:17:18.502 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:17:18.501948+00:00
+2026-07-23T13:17:18.5991190Z 2026-07-23 13:17:18.598 Getting EOL data for 24.04 (noble).
+2026-07-23T13:17:18.6004948Z 2026-07-23 13:17:18.600 24.04 isn't EOL.
+2026-07-23T13:17:18.6005547Z 2026-07-23 13:17:18.600 Not updating EOL sources because 24.04 isn't EOL.
+2026-07-23T13:17:18.6007297Z 2026-07-23 13:17:18.600 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical apt-get update
+2026-07-23T13:17:18.6498134Z 2026-07-23 13:17:18.649 Set instance timer to '2026-07-23T13:17:18.501948+00:00'
+2026-07-23T13:17:21.6503065Z 2026-07-23 13:17:21.649 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:17:21.649757+00:00
+2026-07-23T13:17:21.8161849Z 2026-07-23 13:17:21.814 Set instance timer to '2026-07-23T13:17:21.649757+00:00'
+2026-07-23T13:17:23.6647091Z 2026-07-23 13:17:23.664 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical apt-get -y dist-upgrade
+2026-07-23T13:17:24.8156461Z 2026-07-23 13:17:24.815 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:17:24.815096+00:00
+2026-07-23T13:17:24.9548356Z 2026-07-23 13:17:24.954 Set instance timer to '2026-07-23T13:17:24.815096+00:00'
+2026-07-23T13:17:27.9549621Z 2026-07-23 13:17:27.954 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:17:27.954354+00:00
+2026-07-23T13:17:28.0853853Z 2026-07-23 13:17:28.085 Set instance timer to '2026-07-23T13:17:27.954354+00:00'
+2026-07-23T13:17:31.0857979Z 2026-07-23 13:17:31.085 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:17:31.085346+00:00
+2026-07-23T13:17:31.2247755Z 2026-07-23 13:17:31.224 Set instance timer to '2026-07-23T13:17:31.085346+00:00'
+2026-07-23T13:17:34.2252663Z 2026-07-23 13:17:34.224 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:17:34.224698+00:00
+2026-07-23T13:17:34.3808698Z 2026-07-23 13:17:34.379 Set instance timer to '2026-07-23T13:17:34.224698+00:00'
+2026-07-23T13:17:37.3806336Z 2026-07-23 13:17:37.380 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:17:37.379826+00:00
+2026-07-23T13:17:37.5317351Z 2026-07-23 13:17:37.530 Set instance timer to '2026-07-23T13:17:37.379826+00:00'
+2026-07-23T13:17:40.5313911Z 2026-07-23 13:17:40.531 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:17:40.530883+00:00
+2026-07-23T13:17:40.6811026Z 2026-07-23 13:17:40.679 Set instance timer to '2026-07-23T13:17:40.530883+00:00'
+2026-07-23T13:17:43.6806684Z 2026-07-23 13:17:43.680 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:17:43.680157+00:00
+2026-07-23T13:17:43.8192469Z 2026-07-23 13:17:43.818 Set instance timer to '2026-07-23T13:17:43.680157+00:00'
+2026-07-23T13:17:45.4907291Z 2026-07-23 13:17:45.490 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical apt-get install -y apt-utils build-essential curl fuse udev python3 python3-dev python3-pip python3-wheel python3-setuptools gpg dirmngr
+2026-07-23T13:17:46.8192870Z 2026-07-23 13:17:46.818 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:17:46.818769+00:00
+2026-07-23T13:17:46.9736387Z 2026-07-23 13:17:46.973 Set instance timer to '2026-07-23T13:17:46.818769+00:00'
+2026-07-23T13:17:49.9741724Z 2026-07-23 13:17:49.973 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:17:49.973617+00:00
+2026-07-23T13:17:50.1282063Z 2026-07-23 13:17:50.127 Set instance timer to '2026-07-23T13:17:49.973617+00:00'
+2026-07-23T13:17:53.1285640Z 2026-07-23 13:17:53.128 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:17:53.128021+00:00
+2026-07-23T13:17:53.2814038Z 2026-07-23 13:17:53.281 Set instance timer to '2026-07-23T13:17:53.128021+00:00'
+2026-07-23T13:17:54.1518970Z 2026-07-23 13:17:54.151 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical systemctl is-active systemd-udevd
+2026-07-23T13:17:54.2812050Z 2026-07-23 13:17:54.280 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical systemctl enable systemd-udevd
+2026-07-23T13:17:54.5198734Z 2026-07-23 13:17:54.519 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical systemctl start systemd-udevd
+2026-07-23T13:17:54.7307320Z 2026-07-23 13:17:54.730 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical apt-get install -y snapd
+2026-07-23T13:17:56.2818873Z 2026-07-23 13:17:56.281 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:17:56.281378+00:00
+2026-07-23T13:17:56.4179681Z 2026-07-23 13:17:56.417 Set instance timer to '2026-07-23T13:17:56.281378+00:00'
+2026-07-23T13:17:59.4201866Z 2026-07-23 13:17:59.418 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:17:59.417954+00:00
+2026-07-23T13:17:59.5982750Z 2026-07-23 13:17:59.596 Set instance timer to '2026-07-23T13:17:59.417954+00:00'
+2026-07-23T13:18:01.1538782Z 2026-07-23 13:18:01.153 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical ln -sf /var/lib/snapd/snap /snap
+2026-07-23T13:18:01.2812216Z 2026-07-23 13:18:01.280 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical systemctl enable --now snapd.socket
+2026-07-23T13:18:01.5495515Z 2026-07-23 13:18:01.549 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical systemctl restart snapd.service
+2026-07-23T13:18:01.9107254Z 2026-07-23 13:18:01.910 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical snap wait system seed.loaded
+2026-07-23T13:18:02.5978784Z 2026-07-23 13:18:02.597 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:18:02.597429+00:00
+2026-07-23T13:18:02.7243620Z 2026-07-23 13:18:02.724 Set instance timer to '2026-07-23T13:18:02.597429+00:00'
+2026-07-23T13:18:04.8085266Z 2026-07-23 13:18:04.808 Holding refreshes for snaps.
+2026-07-23T13:18:04.8088182Z 2026-07-23 13:18:04.808 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical snap refresh --hold
+2026-07-23T13:18:05.0813675Z 2026-07-23 13:18:05.081 Waiting for pending snap refreshes to complete.
+2026-07-23T13:18:05.0816186Z 2026-07-23 13:18:05.081 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical snap watch '--last=auto-refresh?'
+2026-07-23T13:18:05.2547122Z 2026-07-23 13:18:05.254 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical snap unset system proxy.http
+2026-07-23T13:18:05.5318135Z 2026-07-23 13:18:05.531 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical snap unset system proxy.https
+2026-07-23T13:18:05.7247985Z 2026-07-23 13:18:05.724 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:18:05.724337+00:00
+2026-07-23T13:18:05.8089277Z 2026-07-23 13:18:05.808 Installing snap 'core24' with channel=None and classic=False
+2026-07-23T13:18:05.8090349Z 2026-07-23 13:18:05.808 Installing snap 'core24' from host (classic=False)
+2026-07-23T13:18:05.8117559Z 2026-07-23 13:18:05.811 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-07-23T13:18:05.8557192Z 2026-07-23 13:18:05.855 Set instance timer to '2026-07-23T13:18:05.724337+00:00'
+2026-07-23T13:18:05.9766161Z 2026-07-23 13:18:05.976 Executing on host: lxc --project snapcraft file pull local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/craft-instance.conf /home/runner/tmpz8nwu3nh.tmp-craft/tmpl_swtsjf
+2026-07-23T13:18:06.1165022Z 2026-07-23 13:18:06.116 Revisions found: host='1643', target=None
+2026-07-23T13:18:06.1187089Z 2026-07-23 13:18:06.118 Creating an assert file for snap 'core24'
+2026-07-23T13:18:06.1191426Z 2026-07-23 13:18:06.118 Executing command on host: ['snap', 'known', 'account-key', 'public-key-sha3-384=BWDEoaqyr25nF5SNCvEv2v7QnM9QsfCc0PBMYD_i2NGSQ32EF2d4D0hqUel3m8ul']
+2026-07-23T13:18:06.2049069Z 2026-07-23 13:18:06.204 Executing command on host: ['snap', 'known', 'snap-declaration', 'snap-name=core24']
+2026-07-23T13:18:06.2836920Z 2026-07-23 13:18:06.283 Executing command on host: ['snap', 'known', 'snap-revision', 'snap-revision=1643', 'snap-id=dwTAh7MZZ01zyriOZErqd1JynQLiOGvM']
+2026-07-23T13:18:06.3617325Z 2026-07-23 13:18:06.361 Executing command on host: ['snap', 'known', 'account', 'account-id=canonical']
+2026-07-23T13:18:06.4396921Z 2026-07-23 13:18:06.439 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -d /tmp
+2026-07-23T13:18:06.6041688Z 2026-07-23 13:18:06.603 Executing on host: lxc --project snapcraft file push /home/runner/tmpnbcg0v_t.tmp-craft/tmp643t88ab local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/tmp/core24.assert --gid=0 --uid=0
+2026-07-23T13:18:06.7193194Z 2026-07-23 13:18:06.718 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical snap ack /tmp/core24.assert
+2026-07-23T13:18:07.0651864Z 2026-07-23 13:18:07.064 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -d /tmp
+2026-07-23T13:18:07.2301536Z 2026-07-23 13:18:07.229 Executing on host: lxc --project snapcraft file push /home/runner/tmpnullpcrm.tmp-craft/core24.snap local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/tmp/core24.snap --gid=0 --uid=0
+2026-07-23T13:18:07.6442338Z 2026-07-23 13:18:07.643 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical snap install /tmp/core24.snap
+2026-07-23T13:18:08.8562425Z 2026-07-23 13:18:08.855 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:18:08.855745+00:00
+2026-07-23T13:18:08.9974655Z 2026-07-23 13:18:08.997 Set instance timer to '2026-07-23T13:18:08.855745+00:00'
+2026-07-23T13:18:11.6279711Z 2026-07-23 13:18:11.627 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-07-23T13:18:11.7925749Z 2026-07-23 13:18:11.792 Executing on host: lxc --project snapcraft file pull local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/craft-instance.conf /home/runner/tmp8uw97xlt.tmp-craft/tmpc_71hd1_
+2026-07-23T13:18:11.9132340Z 2026-07-23 13:18:11.912 Executing on host: lxc --project snapcraft file push /tmp/tmpha5lac70 local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/craft-instance.conf --mode=0644
+2026-07-23T13:18:11.9978399Z 2026-07-23 13:18:11.997 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:18:11.997419+00:00
+2026-07-23T13:18:12.0261389Z 2026-07-23 13:18:12.025 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chown root:root /etc/craft-instance.conf
+2026-07-23T13:18:12.1793077Z 2026-07-23 13:18:12.179 Set instance timer to '2026-07-23T13:18:11.997419+00:00'
+2026-07-23T13:18:12.1816478Z 2026-07-23 13:18:12.181 Installing snap 'snapcraft' with channel=None and classic=True
+2026-07-23T13:18:12.1817415Z 2026-07-23 13:18:12.181 Installing snap 'snapcraft' from host (classic=True)
+2026-07-23T13:18:12.1838324Z 2026-07-23 13:18:12.183 Installing base snap 'core24' for 'snapcraft' from host
+2026-07-23T13:18:12.1844513Z 2026-07-23 13:18:12.183 Installing snap 'core24' from host (classic=False)
+2026-07-23T13:18:12.1860928Z 2026-07-23 13:18:12.185 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-07-23T13:18:12.3507637Z 2026-07-23 13:18:12.350 Executing on host: lxc --project snapcraft file pull local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/craft-instance.conf /home/runner/tmp1i6chz_5.tmp-craft/tmpufcihhjp
+2026-07-23T13:18:12.4638729Z 2026-07-23 13:18:12.463 Revisions found: host='1643', target='1643'
+2026-07-23T13:18:12.4639544Z 2026-07-23 13:18:12.463 Skipping snap injection: target is already up-to-date with revision on host
+2026-07-23T13:18:12.4644195Z 2026-07-23 13:18:12.464 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-07-23T13:18:12.6291621Z 2026-07-23 13:18:12.628 Executing on host: lxc --project snapcraft file pull local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/craft-instance.conf /home/runner/tmpcm9kwlbn.tmp-craft/tmpfe0l1v27
+2026-07-23T13:18:12.7396380Z 2026-07-23 13:18:12.739 Revisions found: host='18514', target=None
+2026-07-23T13:18:12.7417910Z 2026-07-23 13:18:12.741 Creating an assert file for snap 'snapcraft'
+2026-07-23T13:18:12.7422001Z 2026-07-23 13:18:12.742 Executing command on host: ['snap', 'known', 'account-key', 'public-key-sha3-384=BWDEoaqyr25nF5SNCvEv2v7QnM9QsfCc0PBMYD_i2NGSQ32EF2d4D0hqUel3m8ul']
+2026-07-23T13:18:12.8210633Z 2026-07-23 13:18:12.820 Executing command on host: ['snap', 'known', 'snap-declaration', 'snap-name=snapcraft']
+2026-07-23T13:18:12.8993496Z 2026-07-23 13:18:12.899 Executing command on host: ['snap', 'known', 'snap-revision', 'snap-revision=18514', 'snap-id=vMTKRaLjnOJQetI78HjntT37VuoyssFE']
+2026-07-23T13:18:12.9774569Z 2026-07-23 13:18:12.977 Executing command on host: ['snap', 'known', 'account', 'account-id=canonical']
+2026-07-23T13:18:13.0555835Z 2026-07-23 13:18:13.055 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -d /tmp
+2026-07-23T13:18:13.2201500Z 2026-07-23 13:18:13.219 Executing on host: lxc --project snapcraft file push /home/runner/tmpt_ris4lc.tmp-craft/tmpc2ukjeud local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/tmp/snapcraft.assert --gid=0 --uid=0
+2026-07-23T13:18:13.3332717Z 2026-07-23 13:18:13.332 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical snap ack /tmp/snapcraft.assert
+2026-07-23T13:18:13.6630244Z 2026-07-23 13:18:13.662 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -d /tmp
+2026-07-23T13:18:13.8275982Z 2026-07-23 13:18:13.827 Executing on host: lxc --project snapcraft file push /home/runner/tmpoup7mc1c.tmp-craft/snapcraft.snap local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/tmp/snapcraft.snap --gid=0 --uid=0
+2026-07-23T13:18:14.2659536Z 2026-07-23 13:18:14.265 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical snap install /tmp/snapcraft.snap --classic
+2026-07-23T13:18:15.1797595Z 2026-07-23 13:18:15.179 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:18:15.179285+00:00
+2026-07-23T13:18:15.3031954Z 2026-07-23 13:18:15.302 Set instance timer to '2026-07-23T13:18:15.179285+00:00'
+2026-07-23T13:18:18.3037292Z 2026-07-23 13:18:18.303 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:18:18.303174+00:00
+2026-07-23T13:18:18.4313699Z 2026-07-23 13:18:18.431 Set instance timer to '2026-07-23T13:18:18.303174+00:00'
+2026-07-23T13:18:21.4320414Z 2026-07-23 13:18:21.431 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:18:21.431421+00:00
+2026-07-23T13:18:21.5586824Z 2026-07-23 13:18:21.558 Set instance timer to '2026-07-23T13:18:21.431421+00:00'
+2026-07-23T13:18:24.5612295Z 2026-07-23 13:18:24.558 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:18:24.558675+00:00
+2026-07-23T13:18:24.7547394Z 2026-07-23 13:18:24.754 Set instance timer to '2026-07-23T13:18:24.558675+00:00'
+2026-07-23T13:18:27.7555440Z 2026-07-23 13:18:27.755 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer 2026-07-23T13:18:27.755017+00:00
+2026-07-23T13:18:27.7994873Z 2026-07-23 13:18:27.799 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-07-23T13:18:27.9053724Z 2026-07-23 13:18:27.905 Set instance timer to '2026-07-23T13:18:27.755017+00:00'
+2026-07-23T13:18:27.9647737Z 2026-07-23 13:18:27.964 Executing on host: lxc --project snapcraft file pull local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/craft-instance.conf /home/runner/tmp7sdes648.tmp-craft/tmpngq1k8v2
+2026-07-23T13:18:28.1049479Z 2026-07-23 13:18:28.104 Executing on host: lxc --project snapcraft file push /tmp/tmpvxjiqirl local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/craft-instance.conf --mode=0644
+2026-07-23T13:18:28.2183178Z 2026-07-23 13:18:28.217 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chown root:root /etc/craft-instance.conf
+2026-07-23T13:18:28.3475442Z 2026-07-23 13:18:28.347 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical apt-get autoremove -y
+2026-07-23T13:18:28.9127506Z 2026-07-23 13:18:28.912 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical apt-get clean -y
+2026-07-23T13:18:29.0774395Z 2026-07-23 13:18:29.076 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-07-23T13:18:29.2418537Z 2026-07-23 13:18:29.241 Executing on host: lxc --project snapcraft file pull local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/craft-instance.conf /home/runner/tmp9jnpa40h.tmp-craft/tmphkateui4
+2026-07-23T13:18:29.3584592Z 2026-07-23 13:18:29.358 Executing on host: lxc --project snapcraft file push /tmp/tmphu10j774 local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924/etc/craft-instance.conf --mode=0644
+2026-07-23T13:18:29.4697779Z 2026-07-23 13:18:29.469 Executing in container: lxc --project snapcraft exec local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chown root:root /etc/craft-instance.conf
+2026-07-23T13:18:29.7125488Z 2026-07-23 13:18:29.712 Setting instance timezone to match host timezone 'Etc/UTC'.
+2026-07-23T13:18:29.7126791Z 2026-07-23 13:18:29.712 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 environment.TZ Etc/UTC
+2026-07-23T13:18:29.8360731Z 2026-07-23 13:18:29.835 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 image.description base-instance-snapcraft-buildd-base-v7.1-craft-com.ubuntu.cloud-buildd-core24
+2026-07-23T13:18:29.9574411Z 2026-07-23 13:18:29.957 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.status FINISHED
+2026-07-23T13:18:30.0786886Z 2026-07-23 13:18:30.078 Executing on host: lxc --project snapcraft stop local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924
+2026-07-23T13:18:30.9059208Z 2026-07-23 13:18:30.905 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.timer DONE
+2026-07-23T13:18:34.3088281Z 2026-07-23 13:18:34.308 Executing on host: lxc --project snapcraft list local: --format=yaml
+2026-07-23T13:18:34.4274528Z 2026-07-23 13:18:34.427 Set instance timer to 'DONE'
+2026-07-23T13:18:34.4278055Z 2026-07-23 13:18:34.427 Instance timer update stopped.
+2026-07-23T13:18:34.5503700Z 2026-07-23 13:18:34.550 Executing on host: lxc --project snapcraft config set local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 user.craft_providers.status FINISHED
+2026-07-23T13:18:34.6742493Z 2026-07-23 13:18:34.674 Creating new instance from base instance
+2026-07-23T13:18:34.6744607Z 2026-07-23 13:18:34.674 Creating new instance 'snapcraft-source-record-obs-studio-amd64-8662196' from base instance 'base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924'
+2026-07-23T13:18:34.6746372Z 2026-07-23 13:18:34.674 Executing on host: lxc --project snapcraft copy local:base-instance-snapcraft-buildd-base-v71--f02c2da881cfba9d7924 local:snapcraft-source-record-obs-studio-amd64-8662196
+2026-07-23T13:18:39.6290961Z 2026-07-23 13:18:39.628 Setting instance timezone to match host timezone 'Etc/UTC'.
+2026-07-23T13:18:39.6291864Z 2026-07-23 13:18:39.629 Executing on host: lxc --project snapcraft config set local:snapcraft-source-record-obs-studio-amd64-8662196 environment.TZ Etc/UTC
+2026-07-23T13:18:39.7480698Z 2026-07-23 13:18:39.747 Executing on host: lxc --project snapcraft config set local:snapcraft-source-record-obs-studio-amd64-8662196 raw.idmap 'uid 1001 0
+2026-07-23T13:18:39.7481767Z gid 1001 0'
+2026-07-23T13:18:39.8717032Z 2026-07-23 13:18:39.871 Executing on host: lxc --project snapcraft config get local:snapcraft-source-record-obs-studio-amd64-8662196 raw.idmap
+2026-07-23T13:18:39.9867929Z 2026-07-23 13:18:39.986 Got LXD idmap for instance 'snapcraft-source-record-obs-studio-amd64-8662196': 'uid 1001 0\ngid 1001 0'
+2026-07-23T13:18:39.9869026Z 2026-07-23 13:18:39.986 Starting instance
+2026-07-23T13:18:39.9870183Z 2026-07-23 13:18:39.986 Executing on host: lxc --project snapcraft info local:snapcraft-source-record-obs-studio-amd64-8662196
+2026-07-23T13:18:40.0971497Z 2026-07-23 13:18:40.096 Executing on host: lxc --project snapcraft start local:snapcraft-source-record-obs-studio-amd64-8662196
+2026-07-23T13:18:40.4565469Z 2026-07-23 13:18:40.456 Executing on host: lxc --project snapcraft list local: --format=yaml
+2026-07-23T13:18:40.6161353Z 2026-07-23 13:18:40.615 Executing on host: lxc --project snapcraft config set local:snapcraft-source-record-obs-studio-amd64-8662196 user.craft_providers.status IN_USE
+2026-07-23T13:18:40.7723181Z 2026-07-23 13:18:40.771 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-07-23T13:18:40.9902838Z 2026-07-23 13:18:40.987 Executing on host: lxc --project snapcraft file pull local:snapcraft-source-record-obs-studio-amd64-8662196/etc/craft-instance.conf /home/runner/tmpp7hg5vd5.tmp-craft/tmp_76qh6zr
+2026-07-23T13:18:41.2927527Z 2026-07-23 13:18:41.292 Instance has already been setup.
+2026-07-23T13:18:41.2939583Z 2026-07-23 13:18:41.293 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical cat /etc/os-release
+2026-07-23T13:18:41.4945810Z 2026-07-23 13:18:41.493 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-07-23T13:18:41.7596123Z 2026-07-23 13:18:41.759 Executing on host: lxc --project snapcraft file pull local:snapcraft-source-record-obs-studio-amd64-8662196/etc/craft-instance.conf /home/runner/tmpevvorq3s.tmp-craft/tmpb1wqec25
+2026-07-23T13:18:41.9790077Z 2026-07-23 13:18:41.978 Instance is compatible with compatibility tag 'snapcraft-buildd-base-v7.1'
+2026-07-23T13:18:41.9791040Z 2026-07-23 13:18:41.978 No cache path set, not mounting cache directories.
+2026-07-23T13:18:41.9801961Z 2026-07-23 13:18:41.978 Waiting for environment to be ready...
+2026-07-23T13:18:41.9803883Z 2026-07-23 13:18:41.978 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical systemctl is-system-running
+2026-07-23T13:18:42.3639037Z 2026-07-23 13:18:42.363 systemctl is-system-running status: starting
+2026-07-23T13:18:42.6155699Z 2026-07-23 13:18:42.615 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical systemctl is-system-running
+2026-07-23T13:18:42.8239686Z 2026-07-23 13:18:42.823 systemctl is-system-running status: starting
+2026-07-23T13:18:43.0754021Z 2026-07-23 13:18:43.074 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical systemctl is-system-running
+2026-07-23T13:18:43.3533284Z 2026-07-23 13:18:43.353 systemctl is-system-running status: starting
+2026-07-23T13:18:43.6037850Z 2026-07-23 13:18:43.603 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical systemctl is-system-running
+2026-07-23T13:18:43.7414630Z 2026-07-23 13:18:43.741 systemctl is-system-running status: starting
+2026-07-23T13:18:43.9920758Z 2026-07-23 13:18:43.991 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical systemctl is-system-running
+2026-07-23T13:18:44.1740858Z 2026-07-23 13:18:44.173 systemctl is-system-running status: starting
+2026-07-23T13:18:44.4246179Z 2026-07-23 13:18:44.424 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical systemctl is-system-running
+2026-07-23T13:18:44.6129212Z 2026-07-23 13:18:44.612 Waiting for networking to be ready...
+2026-07-23T13:18:44.6143552Z 2026-07-23 13:18:44.612 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical getent hosts snapcraft.io
+2026-07-23T13:18:44.8827245Z 2026-07-23 13:18:44.882 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chmod go+x /root
+2026-07-23T13:18:45.0164427Z 2026-07-23 13:18:45.016 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical snap unset system proxy.http
+2026-07-23T13:18:45.3371550Z 2026-07-23 13:18:45.336 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical snap unset system proxy.https
+2026-07-23T13:18:45.5656201Z 2026-07-23 13:18:45.565 Installing snap 'core24' with channel=None and classic=False
+2026-07-23T13:18:45.5657041Z 2026-07-23 13:18:45.565 Installing snap 'core24' from host (classic=False)
+2026-07-23T13:18:45.5683441Z 2026-07-23 13:18:45.568 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-07-23T13:18:45.7329559Z 2026-07-23 13:18:45.732 Executing on host: lxc --project snapcraft file pull local:snapcraft-source-record-obs-studio-amd64-8662196/etc/craft-instance.conf /home/runner/tmpsfnzpknz.tmp-craft/tmps1ny6yng
+2026-07-23T13:18:45.8474897Z 2026-07-23 13:18:45.847 Revisions found: host='1643', target='1643'
+2026-07-23T13:18:45.8475729Z 2026-07-23 13:18:45.847 Skipping snap injection: target is already up-to-date with revision on host
+2026-07-23T13:18:45.8476577Z 2026-07-23 13:18:45.847 Installing snap 'snapcraft' with channel=None and classic=True
+2026-07-23T13:18:45.8477321Z 2026-07-23 13:18:45.847 Installing snap 'snapcraft' from host (classic=True)
+2026-07-23T13:18:45.8497150Z 2026-07-23 13:18:45.849 Installing base snap 'core24' for 'snapcraft' from host
+2026-07-23T13:18:45.8498155Z 2026-07-23 13:18:45.849 Installing snap 'core24' from host (classic=False)
+2026-07-23T13:18:45.8516831Z 2026-07-23 13:18:45.851 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-07-23T13:18:46.0177870Z 2026-07-23 13:18:46.017 Executing on host: lxc --project snapcraft file pull local:snapcraft-source-record-obs-studio-amd64-8662196/etc/craft-instance.conf /home/runner/tmpa582vbel.tmp-craft/tmp2ebhgbt2
+2026-07-23T13:18:46.1352012Z 2026-07-23 13:18:46.134 Revisions found: host='1643', target='1643'
+2026-07-23T13:18:46.1352904Z 2026-07-23 13:18:46.135 Skipping snap injection: target is already up-to-date with revision on host
+2026-07-23T13:18:46.1357987Z 2026-07-23 13:18:46.135 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /etc/craft-instance.conf
+2026-07-23T13:18:46.3004368Z 2026-07-23 13:18:46.300 Executing on host: lxc --project snapcraft file pull local:snapcraft-source-record-obs-studio-amd64-8662196/etc/craft-instance.conf /home/runner/tmp4dvyychb.tmp-craft/tmpl4nl006h
+2026-07-23T13:18:46.4269213Z 2026-07-23 13:18:46.426 Revisions found: host='18514', target='18514'
+2026-07-23T13:18:46.4270806Z 2026-07-23 13:18:46.426 Skipping snap injection: target is already up-to-date with revision on host
+2026-07-23T13:18:46.4271476Z 2026-07-23 13:18:46.426 Executing on host: lxc query 'local:/1.0?public'
+2026-07-23T13:18:46.5436724Z 2026-07-23 13:18:46.543 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical cat /etc/os-release
+2026-07-23T13:18:46.6831748Z 2026-07-23 13:18:46.682 Executing on host: lxc --project snapcraft config device show local:snapcraft-source-record-obs-studio-amd64-8662196
+2026-07-23T13:18:46.7941988Z 2026-07-23 13:18:46.793 Executing on host: lxc --project snapcraft config device add local:snapcraft-source-record-obs-studio-amd64-8662196 disk-/root/project disk source=/home/runner/work/source-record-obs-studio-snap/source-record-obs-studio-snap path=/root/project
+2026-07-23T13:18:46.9318638Z 2026-07-23 13:18:46.931 Getting runtime directory.
+2026-07-23T13:18:46.9321501Z 2026-07-23 13:18:46.932 Using '/run/user/1001/5135' for the state directory.
+2026-07-23T13:18:46.9322718Z 2026-07-23 13:18:46.932 Setting up StateService
+2026-07-23T13:18:46.9323569Z 2026-07-23 13:18:46.932 Mounting state directory '/run/user/1001/5135' to '/tmp/craft-state'.
+2026-07-23T13:18:46.9324850Z 2026-07-23 13:18:46.932 Executing on host: lxc --project snapcraft config device show local:snapcraft-source-record-obs-studio-amd64-8662196
+2026-07-23T13:18:47.0463891Z 2026-07-23 13:18:47.046 Executing on host: lxc --project snapcraft config device add local:snapcraft-source-record-obs-studio-amd64-8662196 disk-/tmp/craft-state disk source=/run/user/1001/5135 path=/tmp/craft-state
+2026-07-23T13:18:47.1775454Z 2026-07-23 13:18:47.177 Instance launched and working directory mounted
+2026-07-23T13:18:47.1784741Z 2026-07-23 13:18:47.178 Pushing bashrc to instance
+2026-07-23T13:18:47.1788758Z 2026-07-23 13:18:47.178 Executing on host: lxc --project snapcraft file push /tmp/tmpk5n64loe local:snapcraft-source-record-obs-studio-amd64-8662196/root/.bashrc --mode=644
+2026-07-23T13:18:47.2948200Z 2026-07-23 13:18:47.294 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical chown root:root /root/.bashrc
+2026-07-23T13:18:47.4232781Z 2026-07-23 13:18:47.422 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /root/pro-services.yaml
+2026-07-23T13:18:47.5880283Z 2026-07-23 13:18:47.587 Running in instance: ['snapcraft', 'pack']
+2026-07-23T13:18:47.5881183Z 2026-07-23 13:18:47.587 Skipping package configuration because the proxy service isn't configured.
+2026-07-23T13:18:47.5881963Z 2026-07-23 13:18:47.587 Emitter: Pausing control of the terminal
+2026-07-23T13:18:51.6389257Z 2026-07-23 13:18:51.638 Starting snapcraft, version 9.0.1
+2026-07-23T13:18:51.6389767Z 2026-07-23 13:18:51.638 Logging execution to '/tmp/snapcraft.log'
+2026-07-23T13:18:51.6393432Z 2026-07-23 13:18:51.638 Log verbosity level set to TRACE
+2026-07-23T13:18:51.6394429Z 2026-07-23 13:18:51.638 Setting up Project
+2026-07-23T13:18:51.6395043Z 2026-07-23 13:18:51.639 Project file found at '/root/project/snap/snapcraft.yaml'
+2026-07-23T13:18:51.6429001Z 2026-07-23 13:18:51.639 Loading project file 'snap/snapcraft.yaml
+2026-07-23T13:18:51.6432014Z 2026-07-23 13:18:51.642 Registering plugins...
+2026-07-23T13:18:51.6432703Z 2026-07-23 13:18:51.642 Plugins: colcon, conda, flutter, matter-sdk, poetry, python, uv
+2026-07-23T13:18:51.6433335Z 2026-07-23 13:18:51.642 Setting up BuildPlan
+2026-07-23T13:18:51.6533563Z 2026-07-23 13:18:51.652 Build plan contains 1 build(s).
+2026-07-23T13:18:51.6534662Z 2026-07-23 13:18:51.652 Build plan: [BuildInfo(platform='amd64', build_on='amd64', build_for='amd64', build_base=DistroBase(distribution='ubuntu', series='24.04'))]
+2026-07-23T13:18:51.6608863Z 2026-07-23 13:18:51.660 Preparing application...
+2026-07-23T13:18:51.6609474Z 2026-07-23 13:18:51.660 Setting up ConfigService
+2026-07-23T13:18:51.6612692Z 2026-07-23 13:18:51.661 Merging commands for group 'Lifecycle':
+2026-07-23T13:18:51.6614736Z 2026-07-23 13:18:51.661   - using application command for 'clean'.
+2026-07-23T13:18:51.6615527Z 2026-07-23 13:18:51.661   - using application command for 'pull'.
+2026-07-23T13:18:51.6616157Z 2026-07-23 13:18:51.661   - using application command for 'build'.
+2026-07-23T13:18:51.6617732Z 2026-07-23 13:18:51.661   - using application command for 'stage'.
+2026-07-23T13:18:51.6618458Z 2026-07-23 13:18:51.661   - using application command for 'prime'.
+2026-07-23T13:18:51.6618928Z 2026-07-23 13:18:51.661   - using application command for 'pack'.
+2026-07-23T13:18:51.6621590Z 2026-07-23 13:18:51.662 Merging commands for group 'Other':
+2026-07-23T13:18:51.6627733Z 2026-07-23 13:18:51.662 pre-parsing arguments...
+2026-07-23T13:18:51.6628418Z 2026-07-23 13:18:51.662 Raw pre-parsed sysargs: args={'help': False, 'verbose': False, 'quiet': False, 'verbosity': None, 'version': False} filtered=['pack']
+2026-07-23T13:18:51.6629127Z 2026-07-23 13:18:51.662 General parsed sysargs: command='pack' args=[]
+2026-07-23T13:18:51.6629512Z 2026-07-23 13:18:51.662 Configuring application...
+2026-07-23T13:18:51.6644738Z 2026-07-23 13:18:51.664 Command parsed sysargs: Namespace(destructive_mode=False, use_lxd=False, shell=False, shell_after=False, debug=False, platform=None, build_for=None, output=PosixPath('.'), fetch_service_policy=None, directory=None)
+2026-07-23T13:18:51.6701284Z 2026-07-23 13:18:51.669 Build plan: platform=amd64, build_for=None
+2026-07-23T13:18:51.6712736Z 2026-07-23 13:18:51.670 Loading project because a directory was not provided.
+2026-07-23T13:18:51.6713290Z 2026-07-23 13:18:51.670 Running snapcraft pack on host
+2026-07-23T13:18:51.6714983Z 2026-07-23 13:18:51.670 lifecycle command: 'pack', arguments: Namespace(destructive_mode=False, use_lxd=False, shell=False, shell_after=False, debug=False, platform=None, build_for=None, output=PosixPath('.'), fetch_service_policy=None, directory=None)
+2026-07-23T13:18:51.6811262Z 2026-07-23 13:18:51.679 Created project variables {'version': {'value': '0.4.8', 'updated': False, 'part-name': None}, 'grade': {'value': 'stable', 'updated': False, 'part-name': None}}.
+2026-07-23T13:18:51.6858708Z 2026-07-23 13:18:51.685 Using parallel build count of 4 from CPU count
+2026-07-23T13:18:51.6863735Z 2026-07-23 13:18:51.686 Checking if 'version' exists.
+2026-07-23T13:18:51.6866180Z 2026-07-23 13:18:51.686 Getting value for 'version'.
+2026-07-23T13:18:51.6866757Z 2026-07-23 13:18:51.686 Got '0.4.8' (updated=False) for 'version'.
+2026-07-23T13:18:51.6867283Z 2026-07-23 13:18:51.686 'version' exists.
+2026-07-23T13:18:51.6867747Z 2026-07-23 13:18:51.686 Getting value for 'version'.
+2026-07-23T13:18:51.6869290Z 2026-07-23 13:18:51.686 Got '0.4.8' (updated=False) for 'version'.
+2026-07-23T13:18:51.6873382Z 2026-07-23 13:18:51.687 Checking if 'version' exists.
+2026-07-23T13:18:51.6874150Z 2026-07-23 13:18:51.687 Getting value for 'version'.
+2026-07-23T13:18:51.6875936Z 2026-07-23 13:18:51.687 Got '0.4.8' (updated=False) for 'version'.
+2026-07-23T13:18:51.6876891Z 2026-07-23 13:18:51.687 'version' exists.
+2026-07-23T13:18:51.6877507Z 2026-07-23 13:18:51.687 Getting value for 'version'.
+2026-07-23T13:18:51.6879741Z 2026-07-23 13:18:51.687 Got '0.4.8' (updated=False) for 'version'.
+2026-07-23T13:18:51.6882005Z 2026-07-23 13:18:51.687 Checking if 'grade' exists.
+2026-07-23T13:18:51.6882885Z 2026-07-23 13:18:51.688 Getting value for 'grade'.
+2026-07-23T13:18:51.6885653Z 2026-07-23 13:18:51.688 Got 'stable' (updated=False) for 'grade'.
+2026-07-23T13:18:51.6886276Z 2026-07-23 13:18:51.688 'grade' exists.
+2026-07-23T13:18:51.6887767Z 2026-07-23 13:18:51.688 Getting value for 'grade'.
+2026-07-23T13:18:51.6889177Z 2026-07-23 13:18:51.688 Got 'stable' (updated=False) for 'grade'.
+2026-07-23T13:18:51.6897808Z 2026-07-23 13:18:51.689 Processing grammar (on amd64 for amd64)
+2026-07-23T13:18:51.6901712Z 2026-07-23 13:18:51.689 Processing grammar for plugin: nil
+2026-07-23T13:18:51.6902563Z 2026-07-23 13:18:51.689 Processing grammar for override-build: mkdir -p ${CRAFT_PART_INSTALL}/snap/hooks/
+2026-07-23T13:18:51.6903627Z echo -e '#!/bin/bash\nsnapctl set :obs-plugins snapname='"source-record-obs-studio" > ${CRAFT_PART_INSTALL}/snap/hooks/prepare-slot-obs-plugins
+2026-07-23T13:18:51.6904719Z 2026-07-23 13:18:51.689 Processing grammar for source: https://github.com/exeldro/obs-source-record.git
+2026-07-23T13:18:51.6905450Z 2026-07-23 13:18:51.689 Processing grammar for source-type: git
+2026-07-23T13:18:51.6905960Z 2026-07-23 13:18:51.689 Processing grammar for source-tag: 0.4.8
+2026-07-23T13:18:51.6906450Z 2026-07-23 13:18:51.689 Processing grammar for plugin: cmake
+2026-07-23T13:18:51.6907279Z 2026-07-23 13:18:51.689 Processing grammar for build-environment: [{'CMAKE_PREFIX_PATH': '/snap/obs-studio/current/usr/'}]
+2026-07-23T13:18:51.6908688Z 2026-07-23 13:18:51.690 Not processing grammar for non-grammar enabled keyword cmake-parameters
+2026-07-23T13:18:51.6909526Z 2026-07-23 13:18:51.690 Processing grammar for build-packages: ['libsimde-dev']
+2026-07-23T13:18:51.6916084Z 2026-07-23 13:18:51.690 Processing grammar for build-snaps: ['obs-studio/latest/candidate']
+2026-07-23T13:18:51.6918014Z 2026-07-23 13:18:51.691 Processing grammar for organize: {'usr/lib/obs-plugins/source-record.so': 'source-record-obs-studio/plugins/source-record.so', 'usr/share/obs/obs-plugins/source-record': 'source-record-obs-studio/data'}
+2026-07-23T13:18:51.6919345Z 2026-07-23 13:18:51.691 Processing grammar for prime: ['-usr/obs-plugins', '-usr/data']
+2026-07-23T13:18:51.7678220Z 2026-07-23 13:18:51.767 Build plan contains 1 build(s).
+2026-07-23T13:18:51.7679758Z 2026-07-23 13:18:51.767 Build plan: [BuildInfo(platform='amd64', build_on='amd64', build_for='amd64', build_base=DistroBase(distribution='ubuntu', series='24.04'))]
+2026-07-23T13:18:51.7681278Z 2026-07-23 13:18:51.767 Initializing lifecycle manager in /root
+2026-07-23T13:18:51.7686747Z 2026-07-23 13:18:51.767 Lifecycle: Lifecycle(AppMetadata(name='snapcraft', summary='Package, distribute, and update snaps for Linux and IoT', version='9.0.1', docs_url='https://documentation.ubuntu.com/snapcraft/{version}', artifact_type='artifact', source_ignore_patterns=['*.snap'], project_variables=['version', 'summary', 'description'], mandatory_adoptable_fields=['version', 'summary', 'description'], ConfigModel=<class 'craft_application._config.ConfigModel'>, ProjectClass=<class 'snapcraft.models.project.Project'>, supports_multi_base=False, always_repack=True, check_supported_base=False, enable_for_grammar=False, enable_pro_support=False), work_dir=PosixPath('/root'), cache_dir=PosixPath('/root/.cache/snapcraft'), **{'use_host_sources': False, 'base': 'core24', 'extra_build_snaps': ['core24'], 'confinement': 'strict', 'project_base': 'core24', 'project_name': 'source-record-obs-studio'})
+2026-07-23T13:18:51.7691613Z 2026-07-23 13:18:51.768 Using parallel build count of 4 from CPU count
+2026-07-23T13:18:51.7997780Z 2026-07-23 13:18:51.799 get repository attribute: attr=configure, repository:<class 'craft_parts.packages.deb.Ubuntu'>
+2026-07-23T13:18:51.8000031Z 2026-07-23 13:18:51.799 is_snap: True, SNAP_NAME set to snapcraft
+2026-07-23T13:18:51.8067730Z 2026-07-23 13:18:51.806 Planning prime for all parts
+2026-07-23T13:18:51.8069254Z 2026-07-23 13:18:51.806 process prepare-hook:1
+2026-07-23T13:18:51.8070576Z 2026-07-23 13:18:51.806 add action prepare-hook:1(0)
+2026-07-23T13:18:51.8073796Z 2026-07-23 13:18:51.807 process source-record:1
+2026-07-23T13:18:51.8078167Z 2026-07-23 13:18:51.807 add action source-record:1(0)
+2026-07-23T13:18:51.8078778Z 2026-07-23 13:18:51.807 process prepare-hook:3
+2026-07-23T13:18:51.8080467Z 2026-07-23 13:18:51.807 add action prepare-hook:3(0)
+2026-07-23T13:18:51.8082701Z 2026-07-23 13:18:51.808 process source-record:3
+2026-07-23T13:18:51.8084197Z 2026-07-23 13:18:51.808 add action source-record:3(0)
+2026-07-23T13:18:51.8090299Z 2026-07-23 13:18:51.808 process prepare-hook:4
+2026-07-23T13:18:51.8090706Z 2026-07-23 13:18:51.808 add action prepare-hook:4(0)
+2026-07-23T13:18:51.8091039Z 2026-07-23 13:18:51.808 process source-record:4
+2026-07-23T13:18:51.8091396Z 2026-07-23 13:18:51.808 add action source-record:4(0)
+2026-07-23T13:18:51.8094908Z 2026-07-23 13:18:51.809 process prepare-hook:5
+2026-07-23T13:18:51.8097495Z 2026-07-23 13:18:51.809 add action prepare-hook:5(0)
+2026-07-23T13:18:51.8100786Z 2026-07-23 13:18:51.809 process source-record:5
+2026-07-23T13:18:51.8104376Z 2026-07-23 13:18:51.810 add action source-record:5(0)
+2026-07-23T13:18:51.8105076Z 2026-07-23 13:18:51.810 Initializing lifecycle
+2026-07-23T13:18:51.8123089Z 2026-07-23 13:18:51.811 part build packages: ['libsimde-dev']
+2026-07-23T13:18:51.8126469Z 2026-07-23 13:18:51.811 get repository attribute: attr=get_packages_for_source_type, repository:<class 'craft_parts.packages.deb.Ubuntu'>
+2026-07-23T13:18:51.8137632Z 2026-07-23 13:18:51.812 source build packages: {'git'}
+2026-07-23T13:18:51.8138017Z 2026-07-23 13:18:51.812 plugin build packages: {'gcc', 'cmake'}
+2026-07-23T13:18:51.8138430Z 2026-07-23 13:18:51.812 part build snaps: ['obs-studio/latest/candidate']
+2026-07-23T13:18:51.8138838Z 2026-07-23 13:18:51.813 Installing build-packages
+2026-07-23T13:18:51.8139388Z 2026-07-23 13:18:51.813 get repository attribute: attr=install_packages, repository:<class 'craft_parts.packages.deb.Ubuntu'>
+2026-07-23T13:18:51.8145998Z 2026-07-23 13:18:51.814 Installing packages using apt: ['cmake', 'gcc', 'git', 'libsimde-dev']
+2026-07-23T13:18:53.2786039Z 2026-07-23 13:18:53.278 Marking gcc (and its dependencies) to be fetched
+2026-07-23T13:18:53.2793100Z 2026-07-23 13:18:53.279 package: gcc
+2026-07-23T13:18:53.2796949Z 2026-07-23 13:18:53.279 Marking cmake (and its dependencies) to be fetched
+2026-07-23T13:18:53.2797995Z 2026-07-23 13:18:53.279 package: cmake
+2026-07-23T13:18:53.2811470Z 2026-07-23 13:18:53.279 Marking libsimde-dev (and its dependencies) to be fetched
+2026-07-23T13:18:53.2812230Z 2026-07-23 13:18:53.279 package: libsimde-dev
+2026-07-23T13:18:53.2812609Z 2026-07-23 13:18:53.280 Marking git (and its dependencies) to be fetched
+2026-07-23T13:18:53.2812977Z 2026-07-23 13:18:53.280 package: git
+2026-07-23T13:18:53.4334259Z 2026-07-23 13:18:53.432 Refreshing apt package list
+2026-07-23T13:18:53.4338107Z 2026-07-23 13:18:53.433 Executing: ['apt-get', 'update']
+2026-07-23T13:18:53.6511585Z 2026-07-23 13:18:53.650 :: Hit:1 http://archive.ubuntu.com/ubuntu noble InRelease
+2026-07-23T13:18:53.7279778Z 2026-07-23 13:18:53.727 :: Hit:2 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+2026-07-23T13:18:53.7285730Z 2026-07-23 13:18:53.728 :: Hit:3 http://security.ubuntu.com/ubuntu noble-security InRelease
+2026-07-23T13:18:53.8118609Z 2026-07-23 13:18:53.811 :: Hit:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+2026-07-23T13:18:54.6986191Z 2026-07-23 13:18:54.697 :: Reading package lists...
+2026-07-23T13:18:54.7086145Z 2026-07-23 13:18:54.707 Installing packages: cmake gcc git libsimde-dev
+2026-07-23T13:18:54.7240456Z 2026-07-23 13:18:54.723 :: Reading package lists...
+2026-07-23T13:18:54.9693807Z 2026-07-23 13:18:54.968 :: Building dependency tree...
+2026-07-23T13:18:54.9694770Z 2026-07-23 13:18:54.969 :: Reading state information...
+2026-07-23T13:18:55.1687037Z 2026-07-23 13:18:55.167 :: gcc is already the newest version (4:13.2.0-7ubuntu1).
+2026-07-23T13:18:55.1688197Z 2026-07-23 13:18:55.168 :: gcc set to manually installed.
+2026-07-23T13:18:55.1688974Z 2026-07-23 13:18:55.168 :: The following additional packages will be installed:
+2026-07-23T13:18:55.1690144Z 2026-07-23 13:18:55.168 :: cmake-data git-man libarchive13t64 libcurl3t64-gnutls liberror-perl libicu74
+2026-07-23T13:18:55.1720625Z 2026-07-23 13:18:55.170 :: libjsoncpp25 librhash0 libuv1t64 libxml2
+2026-07-23T13:18:55.1721637Z 2026-07-23 13:18:55.171 :: Suggested packages:
+2026-07-23T13:18:55.1722376Z 2026-07-23 13:18:55.171 :: cmake-doc cmake-format elpa-cmake-mode ninja-build gettext-base
+2026-07-23T13:18:55.1723318Z 2026-07-23 13:18:55.171 :: git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb
+2026-07-23T13:18:55.1724011Z 2026-07-23 13:18:55.171 :: git-cvs git-mediawiki git-svn lrzip
+2026-07-23T13:18:55.1725168Z 2026-07-23 13:18:55.171 :: Recommended packages:
+2026-07-23T13:18:55.1725471Z 2026-07-23 13:18:55.172 :: less
+2026-07-23T13:18:55.2022144Z 2026-07-23 13:18:55.201 :: The following NEW packages will be installed:
+2026-07-23T13:18:55.2023541Z 2026-07-23 13:18:55.202 :: cmake cmake-data git git-man libarchive13t64 libcurl3t64-gnutls
+2026-07-23T13:18:55.2037246Z 2026-07-23 13:18:55.203 :: liberror-perl libicu74 libjsoncpp25 librhash0 libsimde-dev libuv1t64 libxml2
+2026-07-23T13:18:55.4837786Z 2026-07-23 13:18:55.483 :: 0 upgraded, 13 newly installed, 0 to remove and 0 not upgraded.
+2026-07-23T13:18:55.4838842Z 2026-07-23 13:18:55.483 :: Need to get 31.1 MB of archives.
+2026-07-23T13:18:55.4840557Z 2026-07-23 13:18:55.483 :: After this operation, 119 MB of additional disk space will be used.
+2026-07-23T13:18:55.4841425Z 2026-07-23 13:18:55.483 :: Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libicu74 amd64 74.2-1ubuntu3.1 [10.9 MB]
+2026-07-23T13:18:56.7880156Z 2026-07-23 13:18:56.786 :: Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libxml2 amd64 2.9.14+dfsg-1.3ubuntu3.8 [764 kB]
+2026-07-23T13:18:56.7958922Z 2026-07-23 13:18:56.795 :: Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 libuv1t64 amd64 1.48.0-1.1build1 [97.3 kB]
+2026-07-23T13:18:56.7967598Z 2026-07-23 13:18:56.796 :: Get:4 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libarchive13t64 amd64 3.7.2-2ubuntu0.8 [383 kB]
+2026-07-23T13:18:56.7999108Z 2026-07-23 13:18:56.799 :: Get:5 http://archive.ubuntu.com/ubuntu noble/main amd64 libjsoncpp25 amd64 1.9.5-6build1 [82.8 kB]
+2026-07-23T13:18:56.8004910Z 2026-07-23 13:18:56.800 :: Get:6 http://archive.ubuntu.com/ubuntu noble/main amd64 librhash0 amd64 1.4.3-3build1 [129 kB]
+2026-07-23T13:18:56.8016422Z 2026-07-23 13:18:56.801 :: Get:7 http://archive.ubuntu.com/ubuntu noble/main amd64 cmake-data all 3.28.3-1build7 [2155 kB]
+2026-07-23T13:18:56.8211441Z 2026-07-23 13:18:56.818 :: Get:8 http://archive.ubuntu.com/ubuntu noble/main amd64 cmake amd64 3.28.3-1build7 [11.2 MB]
+2026-07-23T13:18:56.9776526Z 2026-07-23 13:18:56.977 :: Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl3t64-gnutls amd64 8.5.0-2ubuntu10.11 [334 kB]
+2026-07-23T13:18:56.9811751Z 2026-07-23 13:18:56.980 :: Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 liberror-perl all 0.17029-2 [25.6 kB]
+2026-07-23T13:18:56.9831152Z 2026-07-23 13:18:56.980 :: Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 git-man all 1:2.43.0-1ubuntu7.3 [1100 kB]
+2026-07-23T13:18:56.9880658Z 2026-07-23 13:18:56.987 :: Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 git amd64 1:2.43.0-1ubuntu7.3 [3680 kB]
+2026-07-23T13:18:57.0106287Z 2026-07-23 13:18:57.010 :: Get:13 http://archive.ubuntu.com/ubuntu noble/universe amd64 libsimde-dev all 0.7.2-6 [261 kB]
+2026-07-23T13:18:57.2103691Z 2026-07-23 13:18:57.209 :: Fetched 31.1 MB in 2s (17.3 MB/s)
+2026-07-23T13:18:57.2267610Z 2026-07-23 13:18:57.226 :: Selecting previously unselected package libicu74:amd64.
+2026-07-23T13:18:57.2383544Z 2026-07-23 13:18:57.237 :: (Reading database ... 16786 files and directories currently installed.)
+2026-07-23T13:18:57.2392664Z 2026-07-23 13:18:57.239 :: Preparing to unpack .../00-libicu74_74.2-1ubuntu3.1_amd64.deb ...
+2026-07-23T13:18:57.2413062Z 2026-07-23 13:18:57.240 :: Unpacking libicu74:amd64 (74.2-1ubuntu3.1) ...
+2026-07-23T13:18:57.4032869Z 2026-07-23 13:18:57.401 :: Selecting previously unselected package libxml2:amd64.
+2026-07-23T13:18:57.4042012Z 2026-07-23 13:18:57.403 :: Preparing to unpack .../01-libxml2_2.9.14+dfsg-1.3ubuntu3.8_amd64.deb ...
+2026-07-23T13:18:57.4052541Z 2026-07-23 13:18:57.404 :: Unpacking libxml2:amd64 (2.9.14+dfsg-1.3ubuntu3.8) ...
+2026-07-23T13:18:57.4332769Z 2026-07-23 13:18:57.431 :: Selecting previously unselected package libuv1t64:amd64.
+2026-07-23T13:18:57.4336284Z 2026-07-23 13:18:57.433 :: Preparing to unpack .../02-libuv1t64_1.48.0-1.1build1_amd64.deb ...
+2026-07-23T13:18:57.4348257Z 2026-07-23 13:18:57.434 :: Unpacking libuv1t64:amd64 (1.48.0-1.1build1) ...
+2026-07-23T13:18:57.4554383Z 2026-07-23 13:18:57.453 :: Selecting previously unselected package libarchive13t64:amd64.
+2026-07-23T13:18:57.4564028Z 2026-07-23 13:18:57.456 :: Preparing to unpack .../03-libarchive13t64_3.7.2-2ubuntu0.8_amd64.deb ...
+2026-07-23T13:18:57.4571129Z 2026-07-23 13:18:57.456 :: Unpacking libarchive13t64:amd64 (3.7.2-2ubuntu0.8) ...
+2026-07-23T13:18:57.4797703Z 2026-07-23 13:18:57.479 :: Selecting previously unselected package libjsoncpp25:amd64.
+2026-07-23T13:18:57.4817660Z 2026-07-23 13:18:57.481 :: Preparing to unpack .../04-libjsoncpp25_1.9.5-6build1_amd64.deb ...
+2026-07-23T13:18:57.4825901Z 2026-07-23 13:18:57.482 :: Unpacking libjsoncpp25:amd64 (1.9.5-6build1) ...
+2026-07-23T13:18:57.5033812Z 2026-07-23 13:18:57.501 :: Selecting previously unselected package librhash0:amd64.
+2026-07-23T13:18:57.5039379Z 2026-07-23 13:18:57.503 :: Preparing to unpack .../05-librhash0_1.4.3-3build1_amd64.deb ...
+2026-07-23T13:18:57.5048279Z 2026-07-23 13:18:57.504 :: Unpacking librhash0:amd64 (1.4.3-3build1) ...
+2026-07-23T13:18:57.5256882Z 2026-07-23 13:18:57.525 :: Selecting previously unselected package cmake-data.
+2026-07-23T13:18:57.5279543Z 2026-07-23 13:18:57.527 :: Preparing to unpack .../06-cmake-data_3.28.3-1build7_all.deb ...
+2026-07-23T13:18:57.5344029Z 2026-07-23 13:18:57.533 :: Unpacking cmake-data (3.28.3-1build7) ...
+2026-07-23T13:18:58.0530439Z 2026-07-23 13:18:58.052 :: Selecting previously unselected package cmake.
+2026-07-23T13:18:58.0563557Z 2026-07-23 13:18:58.055 :: Preparing to unpack .../07-cmake_3.28.3-1build7_amd64.deb ...
+2026-07-23T13:18:58.0581004Z 2026-07-23 13:18:58.056 :: Unpacking cmake (3.28.3-1build7) ...
+2026-07-23T13:18:58.2281953Z 2026-07-23 13:18:58.226 :: Selecting previously unselected package libcurl3t64-gnutls:amd64.
+2026-07-23T13:18:58.2287573Z 2026-07-23 13:18:58.228 :: Preparing to unpack .../08-libcurl3t64-gnutls_8.5.0-2ubuntu10.11_amd64.deb ...
+2026-07-23T13:18:58.2296973Z 2026-07-23 13:18:58.229 :: Unpacking libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.11) ...
+2026-07-23T13:18:58.2507317Z 2026-07-23 13:18:58.250 :: Selecting previously unselected package liberror-perl.
+2026-07-23T13:18:58.2530184Z 2026-07-23 13:18:58.252 :: Preparing to unpack .../09-liberror-perl_0.17029-2_all.deb ...
+2026-07-23T13:18:58.2539567Z 2026-07-23 13:18:58.253 :: Unpacking liberror-perl (0.17029-2) ...
+2026-07-23T13:18:58.2732284Z 2026-07-23 13:18:58.272 :: Selecting previously unselected package git-man.
+2026-07-23T13:18:58.2754874Z 2026-07-23 13:18:58.275 :: Preparing to unpack .../10-git-man_1%3a2.43.0-1ubuntu7.3_all.deb ...
+2026-07-23T13:18:58.2765658Z 2026-07-23 13:18:58.276 :: Unpacking git-man (1:2.43.0-1ubuntu7.3) ...
+2026-07-23T13:18:58.3268066Z 2026-07-23 13:18:58.326 :: Selecting previously unselected package git.
+2026-07-23T13:18:58.3293881Z 2026-07-23 13:18:58.329 :: Preparing to unpack .../11-git_1%3a2.43.0-1ubuntu7.3_amd64.deb ...
+2026-07-23T13:18:58.3359364Z 2026-07-23 13:18:58.335 :: Unpacking git (1:2.43.0-1ubuntu7.3) ...
+2026-07-23T13:18:58.5254590Z 2026-07-23 13:18:58.524 :: Selecting previously unselected package libsimde-dev.
+2026-07-23T13:18:58.5283578Z 2026-07-23 13:18:58.528 :: Preparing to unpack .../12-libsimde-dev_0.7.2-6_all.deb ...
+2026-07-23T13:18:58.5291256Z 2026-07-23 13:18:58.528 :: Unpacking libsimde-dev (0.7.2-6) ...
+2026-07-23T13:18:58.5999087Z 2026-07-23 13:18:58.599 :: Setting up libsimde-dev (0.7.2-6) ...
+2026-07-23T13:18:58.6014029Z 2026-07-23 13:18:58.601 :: Setting up libuv1t64:amd64 (1.48.0-1.1build1) ...
+2026-07-23T13:18:58.6033148Z 2026-07-23 13:18:58.603 :: Setting up libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.11) ...
+2026-07-23T13:18:58.6050807Z 2026-07-23 13:18:58.604 :: Setting up liberror-perl (0.17029-2) ...
+2026-07-23T13:18:58.6066781Z 2026-07-23 13:18:58.606 :: Setting up libjsoncpp25:amd64 (1.9.5-6build1) ...
+2026-07-23T13:18:58.6083456Z 2026-07-23 13:18:58.608 :: Setting up libicu74:amd64 (74.2-1ubuntu3.1) ...
+2026-07-23T13:18:58.6100694Z 2026-07-23 13:18:58.609 :: Setting up librhash0:amd64 (1.4.3-3build1) ...
+2026-07-23T13:18:58.6119046Z 2026-07-23 13:18:58.611 :: Setting up git-man (1:2.43.0-1ubuntu7.3) ...
+2026-07-23T13:18:58.6137256Z 2026-07-23 13:18:58.613 :: Setting up cmake-data (3.28.3-1build7) ...
+2026-07-23T13:18:58.6208035Z 2026-07-23 13:18:58.620 :: Setting up libxml2:amd64 (2.9.14+dfsg-1.3ubuntu3.8) ...
+2026-07-23T13:18:58.6224531Z 2026-07-23 13:18:58.622 :: Setting up git (1:2.43.0-1ubuntu7.3) ...
+2026-07-23T13:18:58.6298480Z 2026-07-23 13:18:58.629 :: Setting up libarchive13t64:amd64 (3.7.2-2ubuntu0.8) ...
+2026-07-23T13:18:58.6317839Z 2026-07-23 13:18:58.631 :: Setting up cmake (3.28.3-1build7) ...
+2026-07-23T13:18:58.6340379Z 2026-07-23 13:18:58.633 :: Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+2026-07-23T13:18:59.0076740Z 2026-07-23 13:18:59.006 Found installed version 3.28.3-1build7 for package cmake
+2026-07-23T13:18:59.0080358Z 2026-07-23 13:18:59.007 Found installed version 3.28.3-1build7 for package cmake-data
+2026-07-23T13:18:59.0083405Z 2026-07-23 13:18:59.007 Found installed version 1:2.43.0-1ubuntu7.3 for package git
+2026-07-23T13:18:59.0084347Z 2026-07-23 13:18:59.007 Found installed version 1:2.43.0-1ubuntu7.3 for package git-man
+2026-07-23T13:18:59.0085248Z 2026-07-23 13:18:59.007 Found installed version 3.7.2-2ubuntu0.8 for package libarchive13t64
+2026-07-23T13:18:59.0090332Z 2026-07-23 13:18:59.008 Found installed version 8.5.0-2ubuntu10.11 for package libcurl3t64-gnutls
+2026-07-23T13:18:59.0090983Z 2026-07-23 13:18:59.008 Found installed version 0.17029-2 for package liberror-perl
+2026-07-23T13:18:59.0091479Z 2026-07-23 13:18:59.008 Found installed version 74.2-1ubuntu3.1 for package libicu74
+2026-07-23T13:18:59.0091966Z 2026-07-23 13:18:59.008 Found installed version 1.9.5-6build1 for package libjsoncpp25
+2026-07-23T13:18:59.0092455Z 2026-07-23 13:18:59.008 Found installed version 1.4.3-3build1 for package librhash0
+2026-07-23T13:18:59.0092920Z 2026-07-23 13:18:59.008 Found installed version 0.7.2-6 for package libsimde-dev
+2026-07-23T13:18:59.0093384Z 2026-07-23 13:18:59.008 Found installed version 1.48.0-1.1build1 for package libuv1t64
+2026-07-23T13:18:59.0095752Z 2026-07-23 13:18:59.008 Found installed version 2.9.14+dfsg-1.3ubuntu3.8 for package libxml2
+2026-07-23T13:18:59.0104747Z 2026-07-23 13:18:59.010 Installing build-snaps
+2026-07-23T13:18:59.7195329Z 2026-07-23 13:18:59.719 Installing snap: obs-studio
+2026-07-23T13:19:45.6837133Z 2026-07-23 13:19:45.683 verify plugin environment for part 'prepare-hook'
+2026-07-23T13:19:45.6857046Z 2026-07-23 13:19:45.684 verify plugin environment for part 'source-record'
+2026-07-23T13:19:45.6857931Z 2026-07-23 13:19:45.685 Checking if 'version' exists.
+2026-07-23T13:19:45.6858710Z 2026-07-23 13:19:45.685 Getting value for 'version'.
+2026-07-23T13:19:45.6859377Z 2026-07-23 13:19:45.685 Got '0.4.8' (updated=False) for 'version'.
+2026-07-23T13:19:45.6860113Z 2026-07-23 13:19:45.685 'version' exists.
+2026-07-23T13:19:45.6860980Z 2026-07-23 13:19:45.685 Getting value for 'version'.
+2026-07-23T13:19:45.6862805Z 2026-07-23 13:19:45.686 Got '0.4.8' (updated=False) for 'version'.
+2026-07-23T13:19:45.6863484Z 2026-07-23 13:19:45.686 Checking if 'grade' exists.
+2026-07-23T13:19:45.6864128Z 2026-07-23 13:19:45.686 Getting value for 'grade'.
+2026-07-23T13:19:45.6865852Z 2026-07-23 13:19:45.686 Got 'stable' (updated=False) for 'grade'.
+2026-07-23T13:19:45.6867315Z 2026-07-23 13:19:45.686 'grade' exists.
+2026-07-23T13:19:45.6867993Z 2026-07-23 13:19:45.686 Getting value for 'grade'.
+2026-07-23T13:19:45.6870970Z 2026-07-23 13:19:45.686 Got 'stable' (updated=False) for 'grade'.
+2026-07-23T13:19:45.6875998Z 2026-07-23 13:19:45.687 set repository attribute: attr=stage_packages_filters, value=None, repo:<class 'craft_parts.packages.deb.Ubuntu'>
+2026-07-23T13:19:45.6881949Z 2026-07-23 13:19:45.687 Pulling prepare-hook
+2026-07-23T13:19:45.6883494Z 2026-07-23 13:19:45.688 execute action prepare-hook:Action(part_name='prepare-hook', step=Step.PULL, action_type=ActionType.RUN, reason=None, project_vars=ProjectVarInfo(root={}), properties=ActionProperties(changed_files=None, changed_dirs=None))
+2026-07-23T13:19:45.6967166Z 2026-07-23 13:19:45.696 Pulling source-record
+2026-07-23T13:19:45.6986269Z 2026-07-23 13:19:45.696 execute action source-record:Action(part_name='source-record', step=Step.PULL, action_type=ActionType.RUN, reason=None, project_vars=ProjectVarInfo(root={}), properties=ActionProperties(changed_files=None, changed_dirs=None))
+2026-07-23T13:19:45.7917247Z 2026-07-23 13:19:45.791 Executing: /snap/snapcraft/18514/libexec/snapcraft/craft.git -c advice.detachedHead=false clone --recursive --branch 0.4.8 https://github.com/exeldro/obs-source-record.git
+2026-07-23T13:19:45.8031334Z 2026-07-23 13:19:45.802 :: Cloning into '/root/parts/source-record/src'...
+2026-07-23T13:19:47.0236892Z 2026-07-23 13:19:47.023 Building prepare-hook
+2026-07-23T13:19:47.0239822Z 2026-07-23 13:19:47.023 execute action prepare-hook:Action(part_name='prepare-hook', step=Step.BUILD, action_type=ActionType.RUN, reason=None, project_vars=ProjectVarInfo(root={}), properties=ActionProperties(changed_files=None, changed_dirs=None))
+2026-07-23T13:19:47.0247431Z 2026-07-23 13:19:47.024 load state file: /root/parts/prepare-hook/state/pull
+2026-07-23T13:19:47.0289287Z 2026-07-23 13:19:47.028 get repository attribute: attr=unpack_stage_packages, repository:<class 'craft_parts.packages.deb.Ubuntu'>
+2026-07-23T13:19:47.0293501Z 2026-07-23 13:19:47.029 remove directory /root/parts/prepare-hook/build
+2026-07-23T13:19:47.0313057Z 2026-07-23 13:19:47.031 Executing PosixPath('/tmp/tmp9jtvq5yq/scriptlet.sh')
+2026-07-23T13:19:47.0338042Z 2026-07-23 13:19:47.033 :: + mkdir -p /root/parts/prepare-hook/install/snap/hooks/
+2026-07-23T13:19:47.0358321Z 2026-07-23 13:19:47.035 :: + echo -e '#!/bin/bash\nsnapctl set :obs-plugins snapname=source-record-obs-studio'
+2026-07-23T13:19:47.0359435Z 2026-07-23 13:19:47.035 Run pre-organize callbacks
+2026-07-23T13:19:47.0374995Z 2026-07-23 13:19:47.037 get repository attribute: attr=get_installed_packages, repository:<class 'craft_parts.packages.deb.Ubuntu'>
+2026-07-23T13:19:47.6335794Z 2026-07-23 13:19:47.633 Building source-record
+2026-07-23T13:19:47.6346468Z 2026-07-23 13:19:47.633 execute action source-record:Action(part_name='source-record', step=Step.BUILD, action_type=ActionType.RUN, reason=None, project_vars=ProjectVarInfo(root={}), properties=ActionProperties(changed_files=None, changed_dirs=None))
+2026-07-23T13:19:47.6361351Z 2026-07-23 13:19:47.634 load state file: /root/parts/source-record/state/pull
+2026-07-23T13:19:47.6393098Z 2026-07-23 13:19:47.639 get repository attribute: attr=unpack_stage_packages, repository:<class 'craft_parts.packages.deb.Ubuntu'>
+2026-07-23T13:19:47.6409300Z 2026-07-23 13:19:47.640 Executing PosixPath('/root/parts/source-record/run/build.sh')
+2026-07-23T13:19:47.6434544Z 2026-07-23 13:19:47.642 :: + cmake /root/parts/source-record/src -G 'Unix Makefiles' -DBUILD_OUT_OF_TREE=On -DCMAKE_INSTALL_PREFIX=/usr
+2026-07-23T13:19:47.7021181Z 2026-07-23 13:19:47.701 :: -- The C compiler identification is GNU 13.3.0
+2026-07-23T13:19:47.7651803Z 2026-07-23 13:19:47.764 :: -- The CXX compiler identification is GNU 13.3.0
+2026-07-23T13:19:47.7819981Z 2026-07-23 13:19:47.781 :: -- Detecting C compiler ABI info
+2026-07-23T13:19:47.8721050Z 2026-07-23 13:19:47.871 :: -- Detecting C compiler ABI info - done
+2026-07-23T13:19:47.8816360Z 2026-07-23 13:19:47.881 :: -- Check for working C compiler: /usr/bin/cc - skipped
+2026-07-23T13:19:47.8818410Z 2026-07-23 13:19:47.881 :: -- Detecting C compile features
+2026-07-23T13:19:47.8824628Z 2026-07-23 13:19:47.882 :: -- Detecting C compile features - done
+2026-07-23T13:19:47.8930740Z 2026-07-23 13:19:47.892 :: -- Detecting CXX compiler ABI info
+2026-07-23T13:19:47.9962455Z 2026-07-23 13:19:47.994 :: -- Detecting CXX compiler ABI info - done
+2026-07-23T13:19:48.0053495Z 2026-07-23 13:19:48.004 :: -- Check for working CXX compiler: /usr/bin/c++ - skipped
+2026-07-23T13:19:48.0054160Z 2026-07-23 13:19:48.005 :: -- Detecting CXX compile features
+2026-07-23T13:19:48.0060616Z 2026-07-23 13:19:48.005 :: -- Detecting CXX compile features - done
+2026-07-23T13:19:48.0148080Z 2026-07-23 13:19:48.014 :: -- Found SIMDe: /usr/include (found version "0.7.2")
+2026-07-23T13:19:48.0192816Z 2026-07-23 13:19:48.016 :: -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+2026-07-23T13:19:48.1074590Z 2026-07-23 13:19:48.107 :: -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+2026-07-23T13:19:48.1088088Z 2026-07-23 13:19:48.108 :: -- Found Threads: TRUE
+2026-07-23T13:19:48.1249000Z 2026-07-23 13:19:48.124 :: -- Configuring done (0.5s)
+2026-07-23T13:19:48.1284362Z 2026-07-23 13:19:48.128 :: -- Generating done (0.0s)
+2026-07-23T13:19:48.1293444Z 2026-07-23 13:19:48.129 :: -- Build files have been written to: /root/parts/source-record/build
+2026-07-23T13:19:48.1341377Z 2026-07-23 13:19:48.133 :: + cmake --build . -- -j4
+2026-07-23T13:19:48.1842740Z 2026-07-23 13:19:48.183 :: [ 50%] Building C object CMakeFiles/source-record.dir/source-record.c.o
+2026-07-23T13:19:48.2823353Z 2026-07-23 13:19:48.281 :: /root/parts/source-record/src/source-record.c: In function ‘source_record_filter_properties’:
+2026-07-23T13:19:48.2829613Z 2026-07-23 13:19:48.282 :: /root/parts/source-record/src/source-record.c:1609:9: error: ‘obs_properties_add_button’ is deprecated [-Werror=deprecated-declarations]
+2026-07-23T13:19:48.2831851Z 2026-07-23 13:19:48.282 ::  1609 |         obs_properties_add_button(split_file, "split_file_now", obs_frontend_get_locale_string("Basic.Main.SplitFile"),
+2026-07-23T13:19:48.2835222Z 2026-07-23 13:19:48.282 ::       |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+2026-07-23T13:19:48.2835837Z 2026-07-23 13:19:48.283 :: In file included from /snap/obs-studio/1322/usr/include/obs/obs.h:35,
+2026-07-23T13:19:48.2836478Z 2026-07-23 13:19:48.283 ::                  from /snap/obs-studio/1322/usr/include/obs/obs-module.h:20,
+2026-07-23T13:19:48.2840084Z 2026-07-23 13:19:48.283 ::                  from /root/parts/source-record/src/source-record.c:1:
+2026-07-23T13:19:48.2840781Z 2026-07-23 13:19:48.283 :: /snap/obs-studio/1322/usr/include/obs/obs-properties.h:217:39: note: declared here
+2026-07-23T13:19:48.2841549Z 2026-07-23 13:19:48.283 ::   217 | OBS_DEPRECATED EXPORT obs_property_t *obs_properties_add_button(obs_properties_t *props, const char *name,
+2026-07-23T13:19:48.2842199Z 2026-07-23 13:19:48.283 ::       |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+2026-07-23T13:19:48.9791285Z 2026-07-23 13:19:48.978 :: cc1: all warnings being treated as errors
+2026-07-23T13:19:48.9820271Z 2026-07-23 13:19:48.981 :: gmake[2]: *** [CMakeFiles/source-record.dir/build.make:76: CMakeFiles/source-record.dir/source-record.c.o] Error 1
+2026-07-23T13:19:48.9821482Z 2026-07-23 13:19:48.981 :: gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/source-record.dir/all] Error 2
+2026-07-23T13:19:48.9826144Z 2026-07-23 13:19:48.982 :: gmake: *** [Makefile:156: all] Error 2
+2026-07-23T13:19:48.9851497Z 2026-07-23 13:19:48.984 Failed to run the build script for part 'source-record'.
+2026-07-23T13:19:48.9853064Z 2026-07-23 13:19:48.984 Detailed information: 
+2026-07-23T13:19:48.9854437Z :: + cmake /root/parts/source-record/src -G 'Unix Makefiles' -DBUILD_OUT_OF_TREE=On -DCMAKE_INSTALL_PREFIX=/usr
+2026-07-23T13:19:48.9855114Z :: + cmake --build . -- -j4
+2026-07-23T13:19:48.9856315Z :: /root/parts/source-record/src/source-record.c: In function ‘source_record_filter_properties’:
+2026-07-23T13:19:48.9857597Z :: /root/parts/source-record/src/source-record.c:1609:9: error: ‘obs_properties_add_button’ is deprecated [-Werror=deprecated-declarations]
+2026-07-23T13:19:48.9858765Z ::  1609 |         obs_properties_add_button(split_file, "split_file_now", obs_frontend_get_locale_string("Basic.Main.SplitFile"),
+2026-07-23T13:19:48.9859405Z ::       |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+2026-07-23T13:19:48.9860181Z :: In file included from /snap/obs-studio/1322/usr/include/obs/obs.h:35,
+2026-07-23T13:19:48.9860857Z ::                  from /snap/obs-studio/1322/usr/include/obs/obs-module.h:20,
+2026-07-23T13:19:48.9861500Z ::                  from /root/parts/source-record/src/source-record.c:1:
+2026-07-23T13:19:48.9862720Z :: /snap/obs-studio/1322/usr/include/obs/obs-properties.h:217:39: note: declared here
+2026-07-23T13:19:48.9863694Z ::   217 | OBS_DEPRECATED EXPORT obs_property_t *obs_properties_add_button(obs_properties_t *props, const char *name,
+2026-07-23T13:19:48.9864368Z ::       |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+2026-07-23T13:19:48.9864926Z :: cc1: all warnings being treated as errors
+2026-07-23T13:19:48.9865810Z :: gmake[2]: *** [CMakeFiles/source-record.dir/build.make:76: CMakeFiles/source-record.dir/source-record.c.o] Error 1
+2026-07-23T13:19:48.9866601Z :: gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/source-record.dir/all] Error 2
+2026-07-23T13:19:48.9867418Z :: gmake: *** [Makefile:156: all] Error 2
+2026-07-23T13:19:48.9911509Z 2026-07-23 13:19:48.990 Traceback (most recent call last):
+2026-07-23T13:19:48.9912978Z 2026-07-23 13:19:48.990   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_parts/executor/step_handler.py", line 181, in _builtin_build
+2026-07-23T13:19:48.9914061Z 2026-07-23 13:19:48.990     _create_and_run_script(
+2026-07-23T13:19:48.9915417Z 2026-07-23 13:19:48.991   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_parts/executor/step_handler.py", line 572, in _create_and_run_script
+2026-07-23T13:19:48.9916653Z 2026-07-23 13:19:48.991     process.run(
+2026-07-23T13:19:48.9917465Z 2026-07-23 13:19:48.991   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_parts/utils/process.py", line 186, in run
+2026-07-23T13:19:48.9918268Z 2026-07-23 13:19:48.991     result.check_returncode()
+2026-07-23T13:19:48.9919080Z 2026-07-23 13:19:48.991   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_parts/utils/process.py", line 52, in check_returncode
+2026-07-23T13:19:48.9920315Z 2026-07-23 13:19:48.991     raise ProcessError(self)
+2026-07-23T13:19:48.9943563Z 2026-07-23 13:19:48.991 craft_parts.utils.process.ProcessError: ProcessResult(returncode=2, stdout=b'-- The C compiler identification is GNU 13.3.0\n-- The CXX compiler identification is GNU 13.3.0\n-- Detecting C compiler ABI info\n-- Detecting C compiler ABI info - done\n-- Check for working C compiler: /usr/bin/cc - skipped\n-- Detecting C compile features\n-- Detecting C compile features - done\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Found SIMDe: /usr/include (found version "0.7.2") \n-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n-- Found Threads: TRUE  \n-- Configuring done (0.5s)\n-- Generating done (0.0s)\n-- Build files have been written to: /root/parts/source-record/build\n[ 50%] Building C object CMakeFiles/source-record.dir/source-record.c.o\n', stderr=b'+ cmake /root/parts/source-record/src -G \'Unix Makefiles\' -DBUILD_OUT_OF_TREE=On -DCMAKE_INSTALL_PREFIX=/usr\n+ cmake --build . -- -j4\n/root/parts/source-record/src/source-record.c: In function \xe2\x80\x98source_record_filter_properties\xe2\x80\x99:\n/root/parts/source-record/src/source-record.c:1609:9: error: \xe2\x80\x98obs_properties_add_button\xe2\x80\x99 is deprecated [-Werror=deprecated-declarations]\n 1609 |         obs_properties_add_button(split_file, "split_file_now", obs_frontend_get_locale_string("Basic.Main.SplitFile"),\n      |         ^~~~~~~~~~~~~~~~~~~~~~~~~\nIn file included from /snap/obs-studio/1322/usr/include/obs/obs.h:35,\n                 from /snap/obs-studio/1322/usr/include/obs/obs-module.h:20,\n                 from /root/parts/source-record/src/source-record.c:1:\n/snap/obs-studio/1322/usr/include/obs/obs-properties.h:217:39: note: declared here\n  217 | OBS_DEPRECATED EXPORT obs_property_t *obs_properties_add_button(obs_properties_t *props, const char *name,\n      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~\ncc1: all warnings being treated as errors\ngmake[2]: *** [CMakeFiles/source-record.dir/build.make:76: CMakeFiles/source-record.dir/source-record.c.o] Error 1\ngmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/source-record.dir/all] Error 2\ngmake: *** [Makefile:156: all] Error 2\n', combined=b'+ cmake /root/parts/source-record/src -G \'Unix Makefiles\' -DBUILD_OUT_OF_TREE=On -DCMAKE_INSTALL_PREFIX=/usr\n-- The C compiler identification is GNU 13.3.0\n-- The CXX compiler identification is GNU 13.3.0\n-- Detecting C compiler ABI info\n-- Detecting C compiler ABI info - done\n-- Check for working C compiler: /usr/bin/cc - skipped\n-- Detecting C compile features\n-- Detecting C compile features - done\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Found SIMDe: /usr/include (found version "0.7.2") \n-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n-- Found Threads: TRUE  \n-- Configuring done (0.5s)\n-- Generating done (0.0s)\n-- Build files have been written to: /root/parts/source-record/build\n+ cmake --build . -- -j4\n[ 50%] Building C object CMakeFiles/source-record.dir/source-record.c.o\n/root/parts/source-record/src/source-record.c: In function \xe2\x80\x98source_record_filter_properties\xe2\x80\x99:\n/root/parts/source-record/src/source-record.c:1609:9: error: \xe2\x80\x98obs_properties_add_button\xe2\x80\x99 is deprecated [-Werror=deprecated-declarations]\n 1609 |         obs_properties_add_button(split_file, "split_file_now", obs_frontend_get_locale_string("Basic.Main.SplitFile"),\n      |         ^~~~~~~~~~~~~~~~~~~~~~~~~\nIn file included from /snap/obs-studio/1322/usr/include/obs/obs.h:35,\n                 from /snap/obs-studio/1322/usr/include/obs/obs-module.h:20,\n                 from /root/parts/source-record/src/source-record.c:1:\n/snap/obs-studio/1322/usr/include/obs/obs-properties.h:217:39: note: declared here\n  217 | OBS_DEPRECATED EXPORT obs_property_t *obs_properties_add_button(obs_properties_t *props, const char *name,\n      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~\ncc1: all warnings being treated as errors\ngmake[2]: *** [CMakeFiles/source-record.dir/build.make:76: CMakeFiles/source-record.dir/source-record.c.o] Error 1\ngmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/source-record.dir/all] Error 2\ngmake: *** [Makefile:156: all] Error 2\n', command=[PosixPath('/root/parts/source-record/run/build.sh')])
+2026-07-23T13:19:48.9958882Z 2026-07-23 13:19:48.991 
+2026-07-23T13:19:48.9959286Z 2026-07-23 13:19:48.992 The above exception was the direct cause of the following exception:
+2026-07-23T13:19:48.9959758Z 2026-07-23 13:19:48.992 Traceback (most recent call last):
+2026-07-23T13:19:48.9960843Z 2026-07-23 13:19:48.992   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_application/services/lifecycle.py", line 355, in run
+2026-07-23T13:19:48.9961599Z 2026-07-23 13:19:48.992     self._exec(actions)
+2026-07-23T13:19:48.9962376Z 2026-07-23 13:19:48.992   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_application/services/lifecycle.py", line 379, in _exec
+2026-07-23T13:19:48.9963037Z 2026-07-23 13:19:48.992     aex.execute(action, stdout=stream, stderr=stream)
+2026-07-23T13:19:48.9963670Z 2026-07-23 13:19:48.992   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_parts/executor/executor.py", line 360, in execute
+2026-07-23T13:19:48.9964326Z 2026-07-23 13:19:48.992     self._executor.execute(actions, stdout=stdout, stderr=stderr)
+2026-07-23T13:19:48.9964972Z 2026-07-23 13:19:48.992   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_parts/executor/executor.py", line 160, in execute
+2026-07-23T13:19:48.9965590Z 2026-07-23 13:19:48.992     self._run_action(act, stdout=stdout, stderr=stderr)
+2026-07-23T13:19:48.9966221Z 2026-07-23 13:19:48.992   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_parts/executor/executor.py", line 253, in _run_action
+2026-07-23T13:19:48.9966869Z 2026-07-23 13:19:48.992     handler.run_action(action, stdout=stdout, stderr=stderr)
+2026-07-23T13:19:48.9967529Z 2026-07-23 13:19:48.992   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_parts/executor/part_handler.py", line 313, in run_action
+2026-07-23T13:19:48.9968166Z 2026-07-23 13:19:48.993     state = handler(step_info, stdout=stdout, stderr=stderr)
+2026-07-23T13:19:48.9968567Z 2026-07-23 13:19:48.993             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-23T13:19:48.9969162Z 2026-07-23 13:19:48.993   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_parts/executor/part_handler.py", line 475, in _run_build
+2026-07-23T13:19:48.9969713Z 2026-07-23 13:19:48.993     self._run_step(
+2026-07-23T13:19:48.9970656Z 2026-07-23 13:19:48.993   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_parts/executor/part_handler.py", line 696, in _run_step
+2026-07-23T13:19:48.9971277Z 2026-07-23 13:19:48.993     return step_handler.run_builtin()
+2026-07-23T13:19:48.9971627Z 2026-07-23 13:19:48.993            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-23T13:19:48.9972219Z 2026-07-23 13:19:48.993   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_parts/executor/step_handler.py", line 141, in run_builtin
+2026-07-23T13:19:48.9972791Z 2026-07-23 13:19:48.993     return handler()
+2026-07-23T13:19:48.9973059Z 2026-07-23 13:19:48.993            ^^^^^^^^^
+2026-07-23T13:19:48.9973611Z 2026-07-23 13:19:48.993   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_parts/executor/step_handler.py", line 190, in _builtin_build
+2026-07-23T13:19:48.9974233Z 2026-07-23 13:19:48.993     raise errors.PluginBuildError(
+2026-07-23T13:19:48.9974777Z 2026-07-23 13:19:48.993 craft_parts.errors.PluginBuildError: Failed to run the build script for part 'source-record'.
+2026-07-23T13:19:48.9975258Z 2026-07-23 13:19:48.993 
+2026-07-23T13:19:48.9975778Z 2026-07-23 13:19:48.993 :: + cmake /root/parts/source-record/src -G 'Unix Makefiles' -DBUILD_OUT_OF_TREE=On -DCMAKE_INSTALL_PREFIX=/usr
+2026-07-23T13:19:48.9976336Z 2026-07-23 13:19:48.993 :: + cmake --build . -- -j4
+2026-07-23T13:19:48.9977289Z 2026-07-23 13:19:48.993 :: /root/parts/source-record/src/source-record.c: In function ‘source_record_filter_properties’:
+2026-07-23T13:19:48.9978325Z 2026-07-23 13:19:48.993 :: /root/parts/source-record/src/source-record.c:1609:9: error: ‘obs_properties_add_button’ is deprecated [-Werror=deprecated-declarations]
+2026-07-23T13:19:48.9979331Z 2026-07-23 13:19:48.993 ::  1609 |         obs_properties_add_button(split_file, "split_file_now", obs_frontend_get_locale_string("Basic.Main.SplitFile"),
+2026-07-23T13:19:48.9980130Z 2026-07-23 13:19:48.993 ::       |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+2026-07-23T13:19:48.9980604Z 2026-07-23 13:19:48.994 :: In file included from /snap/obs-studio/1322/usr/include/obs/obs.h:35,
+2026-07-23T13:19:48.9981139Z 2026-07-23 13:19:48.994 ::                  from /snap/obs-studio/1322/usr/include/obs/obs-module.h:20,
+2026-07-23T13:19:48.9981791Z 2026-07-23 13:19:48.994 ::                  from /root/parts/source-record/src/source-record.c:1:
+2026-07-23T13:19:48.9982364Z 2026-07-23 13:19:48.994 :: /snap/obs-studio/1322/usr/include/obs/obs-properties.h:217:39: note: declared here
+2026-07-23T13:19:48.9983082Z 2026-07-23 13:19:48.994 ::   217 | OBS_DEPRECATED EXPORT obs_property_t *obs_properties_add_button(obs_properties_t *props, const char *name,
+2026-07-23T13:19:48.9983692Z 2026-07-23 13:19:48.994 ::       |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+2026-07-23T13:19:48.9984090Z 2026-07-23 13:19:48.994 :: cc1: all warnings being treated as errors
+2026-07-23T13:19:48.9984689Z 2026-07-23 13:19:48.994 :: gmake[2]: *** [CMakeFiles/source-record.dir/build.make:76: CMakeFiles/source-record.dir/source-record.c.o] Error 1
+2026-07-23T13:19:48.9985385Z 2026-07-23 13:19:48.994 :: gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/source-record.dir/all] Error 2
+2026-07-23T13:19:48.9985862Z 2026-07-23 13:19:48.994 :: gmake: *** [Makefile:156: all] Error 2
+2026-07-23T13:19:48.9986333Z 2026-07-23 13:19:48.994 Check the build output and verify the project can work with the 'cmake' plugin.
+2026-07-23T13:19:48.9986998Z 2026-07-23 13:19:48.994 Recommended resolution: Check the build output and verify the project can work with the 'cmake' plugin.
+2026-07-23T13:19:48.9987766Z 2026-07-23 13:19:48.994 For more information, check out: https://documentation.ubuntu.com/snapcraft/9.0.1/reference/plugins/
+2026-07-23T13:19:49.3514099Z 2026-07-23 13:19:49.351 Emitter: Resuming control of the terminal
+2026-07-23T13:19:49.3520369Z 2026-07-23 13:19:49.351 Executing in container: lxc --project snapcraft exec local:snapcraft-source-record-obs-studio-amd64-8662196 -- env CRAFT_MANAGED_MODE=1 SNAPCRAFT_DEBUG=False SNAPCRAFT_LXD_REMOTE=local SNAPCRAFT_LAUNCHPAD_INSTANCE=production DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true DEBIAN_PRIORITY=critical test -f /tmp/snapcraft.log
+2026-07-23T13:19:49.5166915Z 2026-07-23 13:19:49.516 Executing on host: lxc --project snapcraft file pull local:snapcraft-source-record-obs-studio-amd64-8662196/tmp/snapcraft.log /home/runner/tmpzi192lnq.tmp-craft/tmpik5pvpyj
+2026-07-23T13:19:49.6639478Z 2026-07-23 13:19:49.663 Logs retrieved from managed instance:
+2026-07-23T13:19:49.6658230Z 2026-07-23 13:19:49.665 Executing on host: lxc --project snapcraft config device show local:snapcraft-source-record-obs-studio-amd64-8662196
+2026-07-23T13:19:49.7861763Z 2026-07-23 13:19:49.785 Executing on host: lxc --project snapcraft config device remove local:snapcraft-source-record-obs-studio-amd64-8662196 disk-/root/project
+2026-07-23T13:19:49.9196143Z 2026-07-23 13:19:49.919 Executing on host: lxc --project snapcraft config device remove local:snapcraft-source-record-obs-studio-amd64-8662196 disk-/tmp/craft-state
+2026-07-23T13:19:50.0543513Z 2026-07-23 13:19:50.054 Executing on host: lxc --project snapcraft stop local:snapcraft-source-record-obs-studio-amd64-8662196
+2026-07-23T13:19:53.9960774Z 2026-07-23 13:19:53.995 Executing on host: lxc --project snapcraft list local: --format=yaml
+2026-07-23T13:19:54.1275892Z 2026-07-23 13:19:54.127 Executing on host: lxc --project snapcraft config set local:snapcraft-source-record-obs-studio-amd64-8662196 user.craft_providers.status FINISHED
+2026-07-23T13:19:54.2501307Z 2026-07-23 13:19:54.249 Failed to run snapcraft in instance
+2026-07-23T13:19:54.2584725Z 2026-07-23 13:19:54.258 Traceback (most recent call last):
+2026-07-23T13:19:54.2585865Z 2026-07-23 13:19:54.258   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_application/services/provider.py", line 587, in run_managed
+2026-07-23T13:19:54.2587241Z 2026-07-23 13:19:54.258     instance.execute_run(  # pyright: ignore[reportUnknownMemberType,reportUnknownVariableType]
+2026-07-23T13:19:54.2588622Z 2026-07-23 13:19:54.258   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_providers/lxd/lxd_instance.py", line 279, in execute_run
+2026-07-23T13:19:54.2589597Z 2026-07-23 13:19:54.258     return self.lxc.exec(
+2026-07-23T13:19:54.2590205Z 2026-07-23 13:19:54.258            ^^^^^^^^^^^^^^
+2026-07-23T13:19:54.2591455Z 2026-07-23 13:19:54.258   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_providers/lxd/lxc.py", line 536, in exec
+2026-07-23T13:19:54.2592513Z 2026-07-23 13:19:54.258     return runner(final_cmd, timeout=timeout, check=check, **kwargs)
+2026-07-23T13:19:54.2593237Z 2026-07-23 13:19:54.258            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-23T13:19:54.2594057Z 2026-07-23 13:19:54.258   File "/snap/snapcraft/current/usr/lib/python3.12/subprocess.py", line 571, in run
+2026-07-23T13:19:54.2594908Z 2026-07-23 13:19:54.258     raise CalledProcessError(retcode, process.args,
+2026-07-23T13:19:54.2598011Z 2026-07-23 13:19:54.258 subprocess.CalledProcessError: Command '['lxc', '--project', 'snapcraft', 'exec', 'local:snapcraft-source-record-obs-studio-amd64-8662196', '--cwd', '/root/project', '--', 'env', 'CRAFT_MANAGED_MODE=1', 'SNAPCRAFT_DEBUG=False', 'SNAPCRAFT_LXD_REMOTE=local', 'SNAPCRAFT_LAUNCHPAD_INSTANCE=production', 'DEBIAN_FRONTEND=noninteractive', 'DEBCONF_NONINTERACTIVE_SEEN=true', 'DEBIAN_PRIORITY=critical', 'CRAFT_PLATFORM=amd64', 'CRAFT_VERBOSITY_LEVEL=TRACE', 'snapcraft', 'pack']' returned non-zero exit status 1.
+2026-07-23T13:19:54.2600850Z 2026-07-23 13:19:54.258 
+2026-07-23T13:19:54.2601239Z 2026-07-23 13:19:54.258 The above exception was the direct cause of the following exception:
+2026-07-23T13:19:54.2601702Z 2026-07-23 13:19:54.258 Traceback (most recent call last):
+2026-07-23T13:19:54.2602304Z 2026-07-23 13:19:54.258   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_application/application.py", line 693, in run
+2026-07-23T13:19:54.2603097Z 2026-07-23 13:19:54.258     return_code = self._run_inner()
+2026-07-23T13:19:54.2603847Z 2026-07-23 13:19:54.258                   ^^^^^^^^^^^^^^^^^
+2026-07-23T13:19:54.2604616Z 2026-07-23 13:19:54.259   File "/snap/snapcraft/18514/lib/python3.12/site-packages/snapcraft/application.py", line 179, in _run_inner
+2026-07-23T13:19:54.2605208Z 2026-07-23 13:19:54.259     return_code = super()._run_inner()
+2026-07-23T13:19:54.2605548Z 2026-07-23 13:19:54.259                   ^^^^^^^^^^^^^^^^^^^^
+2026-07-23T13:19:54.2606283Z 2026-07-23 13:19:54.259   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_application/application.py", line 670, in _run_inner
+2026-07-23T13:19:54.2607059Z 2026-07-23 13:19:54.259     return_code = dispatcher.run() or os.EX_OK
+2026-07-23T13:19:54.2607551Z 2026-07-23 13:19:54.259                   ^^^^^^^^^^^^^^^^
+2026-07-23T13:19:54.2608349Z 2026-07-23 13:19:54.259   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_cli/dispatcher.py", line 576, in run
+2026-07-23T13:19:54.2609149Z 2026-07-23 13:19:54.259     return self._loaded_command.run(self._parsed_command_args)
+2026-07-23T13:19:54.2609765Z 2026-07-23 13:19:54.259            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-23T13:19:54.2610773Z 2026-07-23 13:19:54.259   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_application/commands/base.py", line 222, in run
+2026-07-23T13:19:54.2611546Z 2026-07-23 13:19:54.259     result = self._run(parsed_args, **kwargs) or result
+2026-07-23T13:19:54.2612141Z 2026-07-23 13:19:54.259              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-23T13:19:54.2612903Z 2026-07-23 13:19:54.259   File "/snap/snapcraft/18514/lib/python3.12/site-packages/snapcraft/commands/lifecycle.py", line 75, in _run
+2026-07-23T13:19:54.2613587Z 2026-07-23 13:19:54.259     super()._run(parsed_args)
+2026-07-23T13:19:54.2614376Z 2026-07-23 13:19:54.259   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_application/commands/lifecycle.py", line 663, in _run
+2026-07-23T13:19:54.2615245Z 2026-07-23 13:19:54.259     return super()._run(parsed_args=parsed_args, step_name=step_name)
+2026-07-23T13:19:54.2615872Z 2026-07-23 13:19:54.259            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-07-23T13:19:54.2616857Z 2026-07-23 13:19:54.259   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_application/commands/lifecycle.py", line 276, in _run
+2026-07-23T13:19:54.2629643Z 2026-07-23 13:19:54.259     self._run_manager_for_build_plan(fetch_service_policy)
+2026-07-23T13:19:54.2630943Z 2026-07-23 13:19:54.259   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_application/commands/lifecycle.py", line 123, in _run_manager_for_build_plan
+2026-07-23T13:19:54.2631787Z 2026-07-23 13:19:54.259     provider.run_managed(build, bool(fetch_service_policy))
+2026-07-23T13:19:54.2632491Z 2026-07-23 13:19:54.259   File "/snap/snapcraft/18514/lib/python3.12/site-packages/craft_application/services/provider.py", line 594, in run_managed
+2026-07-23T13:19:54.2633140Z 2026-07-23 13:19:54.259     raise craft_providers.ProviderError(
+2026-07-23T13:19:54.2633660Z 2026-07-23 13:19:54.259 craft_providers.errors.ProviderError: Failed to run snapcraft in instance
+2026-07-23T13:19:54.2634332Z 2026-07-23 13:19:54.259 Full execution log: '/home/runner/.local/state/snapcraft/log/snapcraft-20260723-131702.182206.log'
+2026-07-23T13:19:54.5232850Z ##[error]Process completed with exit code 1.
+2026-07-23T13:19:54.5241895Z ##[end-action id=pack.pack;outcome=failure;conclusion=failure;duration_ms=176436]
+2026-07-23T13:19:54.5428109Z Post job cleanup.
+2026-07-23T13:19:54.5518652Z Post job cleanup.
+2026-07-23T13:19:54.6384395Z [command]/usr/bin/git version
+2026-07-23T13:19:54.6457996Z git version 2.54.0
+2026-07-23T13:19:54.6494908Z Temporarily overriding HOME='/home/runner/work/_temp/3c235bb8-d5c0-4900-8a58-736afc8101ab' before making global git config changes
+2026-07-23T13:19:54.6496161Z Adding repository directory to the temporary git global config as a safe directory
+2026-07-23T13:19:54.6509734Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/source-record-obs-studio-snap/source-record-obs-studio-snap
+2026-07-23T13:19:54.6547621Z Removing SSH command configuration
+2026-07-23T13:19:54.6555325Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-07-23T13:19:54.6594916Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-07-23T13:19:54.6845056Z Removing HTTP extra header
+2026-07-23T13:19:54.6850553Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-07-23T13:19:54.6888477Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-07-23T13:19:54.7133004Z Removing includeIf entries pointing to credentials config files
+2026-07-23T13:19:54.7139551Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-07-23T13:19:54.7171957Z includeif.gitdir:/home/runner/work/source-record-obs-studio-snap/source-record-obs-studio-snap/.git.path
+2026-07-23T13:19:54.7172852Z includeif.gitdir:/home/runner/work/source-record-obs-studio-snap/source-record-obs-studio-snap/.git/worktrees/*.path
+2026-07-23T13:19:54.7173433Z includeif.gitdir:/github/workspace/.git.path
+2026-07-23T13:19:54.7173830Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-07-23T13:19:54.7181999Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/source-record-obs-studio-snap/source-record-obs-studio-snap/.git.path
+2026-07-23T13:19:54.7209463Z /home/runner/work/_temp/git-credentials-12e11f52-e391-414a-9a74-72fe3c1ab7a3.config
+2026-07-23T13:19:54.7221769Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/source-record-obs-studio-snap/source-record-obs-studio-snap/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-12e11f52\-e391\-414a\-9a74\-72fe3c1ab7a3\.config
+2026-07-23T13:19:54.7262523Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/source-record-obs-studio-snap/source-record-obs-studio-snap/.git/worktrees/*.path
+2026-07-23T13:19:54.7289184Z /home/runner/work/_temp/git-credentials-12e11f52-e391-414a-9a74-72fe3c1ab7a3.config
+2026-07-23T13:19:54.7300464Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/source-record-obs-studio-snap/source-record-obs-studio-snap/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-12e11f52\-e391\-414a\-9a74\-72fe3c1ab7a3\.config
+2026-07-23T13:19:54.7339414Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-07-23T13:19:54.7364995Z /github/runner_temp/git-credentials-12e11f52-e391-414a-9a74-72fe3c1ab7a3.config
+2026-07-23T13:19:54.7373160Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-12e11f52\-e391\-414a\-9a74\-72fe3c1ab7a3\.config
+2026-07-23T13:19:54.7408322Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-07-23T13:19:54.7432806Z /github/runner_temp/git-credentials-12e11f52-e391-414a-9a74-72fe3c1ab7a3.config
+2026-07-23T13:19:54.7443069Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-12e11f52\-e391\-414a\-9a74\-72fe3c1ab7a3\.config
+2026-07-23T13:19:54.7478784Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-07-23T13:19:54.7731000Z Removing credentials config '/home/runner/work/_temp/git-credentials-12e11f52-e391-414a-9a74-72fe3c1ab7a3.config'
+2026-07-23T13:19:54.7910792Z Cleaning up orphan processes
