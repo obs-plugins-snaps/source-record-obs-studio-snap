@@ -28,8 +28,6 @@ snapcraft
 
 The plugin is built against the libobs headers shipped in the
 `obs-studio` snap, so no local OBS build is required.
-<<<<<<< before updating
-=======
 
 The snap starts in `devel` grade; flip it to `stable` in
 `snap/snapcraft.yaml` once the packaged plugin is verified to work.
@@ -54,4 +52,3 @@ E2E_OBS_HOME="$PWD/e2e-home" \
 
 Screenshots, logs and state are collected under `$E2E_OBS_HOME`
 (`e2e-home/` above) for triage.
->>>>>>> after updating
